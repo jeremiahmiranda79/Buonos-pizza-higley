@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="/css/trivia.css" />
+
+<div id="root">
+  {{!-- <h1>Coming soon!</h1> --}}
+
+  <header>
+    <a class="view-high-scores" href="/trivia-high-scores-page">High Scores</a>
+    <img src="/images/buonos-logo.jpg" alt="buonos-pizza-logo" width="50px" height="50px">
+    <p>Time: <span class="time"></span></p>
+  </header>
+
+  <main>
+    <section class="hero1 center">
+      <h4 >Buonos Pizza Trivia</h4>
+    </section>
+
+    <section class="hero2 ">
+      {{!-- <p><b>Test your Buono's Pizza trivia!</b></p> --}}
+      <p>
+        Try and answer the following Buono's trivia questions within the time limit. Keep in mind that 
+        incorrect answers will penalize your score time 
+        by 5 seconds, however eliminate the choice allowing you to guess again. Your final score will reflect how much time is left on the clock. If you do not complete the trivia quiz by the end of the timer your score will be 0. Your score can be entered to see how well you did against others. Have fun and good luck!
+      </p>       
+      <br>
+    </section>
+
+    <div class="start-button-container">
+      <button class="start-button answer">Start Trivia</button>
+    </div> 
+
+    <div id="question-container">
+      <section class="center" id="question"></section>
+      <section class="answer" id="buttons"></section>
+      <section class="center" id="feed-back"></section>
+    </div>
+
+    <div class="center highscore-input" id="highscore-input">
+      <section id="input-highscore"></section>
+    </div>
+
+    <div id="high-scores"></div>
+
+  </main>
+</div>
+
+<script src="/js/triviaQuestions.js"></script>

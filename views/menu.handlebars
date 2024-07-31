@@ -1,0 +1,279 @@
+<head>
+  <link rel="stylesheet" href="/css/scrollableTabs2.css">
+  <link rel="stylesheet" href="/css/menu.css">
+  <link rel="stylesheet" href="/css/updateInformation.css">
+  <link rel="stylesheet" href="/css/social.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+
+<!--#region scollable tabs 2 -->
+  <div class="main-container" >
+    <div class="tab-nav-bar">
+      <div class="tab-navigation">
+        <i class="uil uil-angle-left left-btn"></i> 
+        <i class="uil uil-angle-right right-btn"></i>
+        <ul class="tab-menu">
+          <li class="tab-btn"><a href="#" class="active">All</a></li>
+            {{#each items as |c|}}
+              {{#if c.switchy}}
+                <li class="tab-btn"><a href="#{{c.id}}">{{c.name}}</a></li>
+              {{/if}}
+            {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+<!--#endregion -->
+
+<!--#region if logged in  -->
+  {{#if loggedIn}}
+    <br><br><br>
+    <div class="container-information-header">
+      <center>
+        <h1>Update Menu </h1>
+        <h4>For admin only</h4>
+      </center>
+    </div>
+    <center>
+      <a href="/categories/create" class="active btn btn-primary">Create new category</a>
+    </center>
+    
+    <div class="container-menu">
+      <br>
+      <div class="grid-container-2">
+        {{#each items as |c|}}
+          {{#if c.switchy}}
+            <center>
+              <a class="anchor" id="{{c.id}}"></a>
+              <h1><strong>{{c.name}}</strong></h1>
+              <img src="{{c.image}}" alt="food-image" class="category-image">
+              <br><br>
+              <a href="/categories/update/{{c.id}}" class="active btn btn-primary">Update catagory ({{c.name}})</a>
+              <h1>---------------------------------------------------------</h1>
+              <br>
+              <a href="/menuitems/create" class="active btn btn-primary">Create new menu item</a>
+            </center>
+            <br>
+            <div class="grid-container">
+                {{#each c.menuitems as |i|}}
+                  {{#if i.switchy}}
+                    <div class="grid-item">
+                      <a href="menu/{{i.id}}" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">{{i.name}}</h5>
+                        </div>
+                        <p class="mb-1">{{i.description}}</p>
+                        <center>
+                          <a href="/menuitems/update/{{i.id}}" class="active btn btn-primary m-2">Update menu item ({{i.name}})</a>
+                        </center>
+                      </a>
+                    </div>
+                  {{else}}
+                    <div class="grid-item">
+                      <center>
+                        <h1 style="color:#FF0000";>
+                          <b>({{i.name}}) is currently turned off!</b>
+                        </h1>
+                        <a href="/menuitems/update/{{i.id}}" class="active btn btn-primary">
+                          Toggle  ({{i.name}}) Back On!
+                        </a>
+                        <center>
+                          <h1>--------------</h1>
+                        </center>
+                        <br>
+                      </center>
+                    </div>
+                  {{/if}}
+                {{/each}}
+            </div>
+            <center>
+              <h1>---------------------------------------------------------</h1>
+            </center>
+          {{else}}
+            <center>
+              <h1 style="color:#FF0000";><b>({{c.name}}) is currently turned off!</b></h1>
+              <a href="/categories/update/{{c.id}}" class="active btn btn-primary">Toggle  ({{c.name}}) Back On!</a>
+              <center>
+                <h1>---------------------------------------------------------</h1>
+              </center>
+              <br>
+            </center>
+          {{/if}}
+        {{/each}}
+      </div>
+    </div>
+<!--#endregion -->
+
+<!--#region if NOT logged in  -->
+    {{else}}
+      <div class="container-menu">
+        <div class="grid-container-2">
+          {{#each items as |c|}}
+            {{#if c.switchy}}
+              <center class="xxx">
+                <a class="anchor" id="{{c.id}}"></a>
+                <h1 class="yyy"><strong>{{c.name}}</strong></h1>
+                <img src="{{c.image}}" alt="food-image" class="category-image">
+              </center>
+              <div class="grid-container">
+                {{#each c.menuitems as |i|}}
+                  {{#if i.switchy}}    
+                    <div class="grid-item">
+                      <a href="menu/{{i.id}}" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">{{i.name}}</h5> 
+                        </div>
+
+                        <div class="subitem">
+                          <p class="mb-1">{{i.description}}</p>
+                          <p class="mb-1">Starting price: {{i.price1}}</p>
+                          <p class="mb-1"><b>Click for more information and options</b></p>
+                          <br>
+                          <img src={{i.image}} alt="food-image" class="category-image">  
+                        </div> 
+                      </a>
+                    </div>
+                  {{else}}
+                    <div class="grid-item">
+                      <center>
+                        <h1 style="color:#FF0000";>
+                          <b>({{i.name}}) is currently turned off!</b>
+                        </h1>
+                        <a href="/menuitems/update/{{i.id}}" class="active btn btn-primary">
+                          Toggle  ({{i.name}}) Back On!
+                        </a>
+                        <br>
+                      </center>
+                    </div>
+                  {{/if}}
+                {{/each}}
+              </div>
+            {{/if}}
+          {{/each}}
+        </div>
+      </div>
+  {{/if}}
+<!--#endregion -->
+
+{{!-- <div class="social-footer">
+  {{#each information as |i|}}
+    <h5>{{i.description}}</h5>
+  {{/each}}
+
+  {{#each information as |i|}}
+    <h4>{{i.company}}</h4>
+  {{/each}}
+
+  <a href="tel:+14808991200">
+    {{#each information as |i|}}
+      <h4>{{i.phoneNumber}}</h4>
+    {{/each}}
+  </a>
+
+  <a href="https://www.google.com/maps/dir//1464+E+Williams+Field+Rd,+Gilbert,+AZ+85295/@33.3074096,-111.8409328,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x872bac74ffc357e1:0xed805996e92f4bc4!2m2!1d-111.7585316!2d33.3074368?entry=ttu">
+    {{#each information as |i|}}
+      <h5>{{i.address}}</h5>
+    {{/each}}
+  </a>
+
+  <a href="mailto: buonosgilbert@yahoo.com">
+    {{#each information as |i|}}
+      <h5>{{i.email}}</h5> 
+    {{/each}}
+  </a>
+
+  <div class="row">
+    <div class="column">
+      <a href="https://www.facebook.com/buonosgilbert/" class="button-social">
+        <img src="/images/social-facebook.png" alt="facebook icon"> 
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="https://www.instagram.com/buonospizzagilbert/?hl=en"  class="button-social">
+        <img src="/images/social-instagram.png" alt="instagram icon">
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="https://www.yelp.com/biz/buono-s-pizza-gilbert"  class="button-social">
+        <img src="/images/social-yelp.png" alt="">
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="https://www.google.com/maps/dir//1464+E+Williams+Field+Rd,+Gilbert,+AZ+85295/@33.3074096,-111.8409328,12z/data=!4m6!4m5!1m0!1m2!1m1!1s0x872bac74ffc357e1:0xed805996e92f4bc4!3e0"  class="button-social">
+        <img src="/images/social-google-maps.png" alt="">
+      </a>
+    </div>
+  </div>
+
+  <p>
+    COPYRIGHT &copy; 2024 BUONO'S GILBERT - ALL RIGHTS RESERVED. SORRY NO CHECKS. GROUPS OF 8 OR MORE 15% GRATUITY Will BE INCLUDED. ALL PRICES SUBJECT TO CHANGE WITHOUT NOTICE.
+  </p> 
+
+  <h5>🤓Powered by: SmileyFaceStudios()🤓</h5>
+</div> --}}
+
+<div class="social-footer">
+  {{#each information as |i|}}
+    <h5>{{i.description}}</h5>
+  {{/each}}
+
+  {{#each information as |i|}}
+    <h4>{{i.company}}</h4>
+  {{/each}}
+
+  <a href="https://www.google.com/maps/dir//1464+E+Williams+Field+Rd,+Gilbert,+AZ+85295/@33.3074096,-111.8409328,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x872bac74ffc357e1:0xed805996e92f4bc4!2m2!1d-111.7585316!2d33.3074368?entry=ttu">
+    {{#each information as |i|}}
+      <h4 style="text-decoration:none; color:black;">{{i.address}}</h4>
+    {{/each}}
+  </a>
+
+  <a href="tel:+14808991200">
+    {{#each information as |i|}}
+      <h4 style="text-decoration:none; color:black;">{{i.phoneNumber}}</h4>
+    {{/each}}
+  </a>
+
+  <a href="mailto: buonosgilbert@yahoo.com">
+    {{#each information as |i|}}
+      <h4 style="text-decoration:none; color:black;">{{i.email}}</h4> 
+    {{/each}}
+  </a>
+
+  <div class="row">
+    <div class="column">
+      <a href="https://www.facebook.com/people/Buonos-PIZZA-Gilbert/100067421335508/?mibextid=ZbWKwL" class="button-social">
+        <i class="fa-brands fa-square-facebook" style="text-decoration:none; color:black; font-size:30px;"></i>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="https://www.instagram.com/buonospizzagilbert/?hl=en"  class="button-social">
+        <i class="fa-brands fa-instagram" style="text-decoration:none; color:black; font-size:30px;"></i>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="https://www.yelp.com/biz/buono-s-pizza-gilbert"  class="button-social">
+        <i class="fa-brands fa-yelp" style="text-decoration:none; color:black; font-size:30px;"></i>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="https://www.google.com/maps/dir//1464+E+Williams+Field+Rd,+Gilbert,+AZ+85295/@33.3074096,-111.8409328,12z/data=!4m6!4m5!1m0!1m2!1m1!1s0x872bac74ffc357e1:0xed805996e92f4bc4!3e0"  class="button-social">
+        <i class="fa-brands fa-google" style="text-decoration:none; color:black; font-size:30px;"></i>
+      </a>
+    </div>
+  </div>
+
+  <p>
+    COPYRIGHT &copy; 2024 BUONO'S GILBERT - ALL RIGHTS RESERVED. SORRY NO CHECKS. GROUPS OF 8 OR MORE 15% GRATUITY Will BE INCLUDED. ALL PRICES SUBJECT TO CHANGE WITHOUT NOTICE.
+  </p> 
+
+  <h5>🤓Powered by: SmileyFaceStudios()🤓</h5>
+</div>
+
+<script src="/js/menu.js"></script>
+<script src="/js/menuScrollbar2.js"></script>

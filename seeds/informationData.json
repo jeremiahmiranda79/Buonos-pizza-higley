@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Information",
+    "company": "🍕 Buono's Gilbert LLC",
+    "phoneNumber": "📞 480-218-2338",
+    "telNumber": "tel:+14802182338",
+    "address": "👉 1652 North Higley Road Ste 103, Arizona 85295",
+    "map": "https://www.google.com/maps/place/1652+N+Higley+Rd+%23103,+Gilbert,+AZ+85234/@33.3803097,-111.7242338,16z/data=!3m1!4b1!4m6!3m5!1s0x872baefd5fe6e3dd:0x345013c2282d9d4c!8m2!3d33.3803097!4d-111.7242338!16s%2Fg%2F11rg2qqxjs?entry=ttu",
+    "email": "✉️ buonoshigley@gmail.com",
+    "style": "100% Authentic New York Style",
+    "description": "We thank you for supporting our locally owned and operated pizzeria!",
+    
+    "information1_switch": true
+  }
+]

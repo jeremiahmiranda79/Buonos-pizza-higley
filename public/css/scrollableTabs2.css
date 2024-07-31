@@ -1,0 +1,149 @@
+:root {
+  --first-color: #2e2e41;
+  --second-color: #5b85ff;
+  --third-color: #434354;
+  --text-color: #fff;
+
+  --box-shadow: 0 5px 25px rgb(2, 2, 2, 0.1);
+  --text-shadow: 0 5px 25px rgb(2, 2, 2, 0.1);
+}
+
+/* ======= Main CSS ======= */
+.main-container {
+  position: fixed;
+  top: 80px;
+  z-index: 99;
+  /* width: 100%; */
+  
+}
+
+/* ======= Tab Navigation Bar ======= */
+.tab-nav-bar {
+  position: fixed;
+  width: 100%;
+  
+  background-color: var(--third-color)
+}
+
+.tab-navigation {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: fit-content;
+  margin: 0 auto;
+}
+
+.tab-menu {
+  color: var(--text-color);
+  list-style: none;
+  background: var(--third-color);
+  /* padding: 5px; */
+  white-space: nowrap;
+  /* border-bottom: 1px solid black;
+  border-radius: 0px; */
+  /* box-shadow: var(--box-shadow); */
+  overflow-x: auto;
+  user-select: none;
+  scroll-behavior: smooth;
+
+  /* width: 100%; */
+  margin-bottom: 0px;
+}
+
+.tab-menu.dragging {
+  scroll-behavior: unset;
+  cursor: grab;
+}
+
+.tab-menu::-webkit-scrollbar {
+  display: none;
+}
+
+.tab-btn {
+  color: var(--text-color);
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 400;
+  margin: 6px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.3s ease;
+}
+
+.tab-btn a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.tab-menu.dragging .tab-btn {
+  pointer-events: none;
+}
+
+.tab-btn:hover {
+  background: var(--first-color);
+}
+
+.tab-btn.active {
+  background: var(--second-color);
+}
+
+.left-btn, .right-btn {
+  position: absolute;
+  color: var(--text-color);
+  text-align: center;
+  font-size: 41px;
+  cursor: pointer;
+  /* bottom: 16.5px; */
+}
+
+.left-btn {
+  left: 0;
+  background: linear-gradient(to left, transparent, var(--first-color) 10%);
+  display: none;
+}
+
+.right-btn {
+  right: 0;
+  background: linear-gradient(to right, transparent, var(--first-color) 10%);
+}
+
+/* ======= Tab Content ======= */
+@media (max-width: 1440px) {
+  .left-btn, .right-btn {
+
+  }
+}
+
+@media (max-width: 1024px) {
+  .left-btn, .right-btn {
+
+  }
+}
+
+@media (max-width: 768px) {
+  .tab-btn {
+    font-size: 1.2em;
+  }
+
+  .tab-btn a {
+    font-size: 17.5px;
+  }
+
+  .left-btn, .right-btn {
+    font-size: 2.5em;
+  }
+  
+  .left-btn {
+    left: 0;
+    background: linear-gradient(to left, transparent, var(--first-color) 50%);
+    display: none;
+  }
+  
+  .right-btn {
+    right: 0;
+    background: linear-gradient(to right, transparent, var(--first-color) 50%);
+  }
+}

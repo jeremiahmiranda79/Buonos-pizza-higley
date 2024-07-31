@@ -1,0 +1,86 @@
+:root {
+  --italy-green: rgb(1, 146, 71); /* ##019247*/
+  --italy-white: rgb(238, 237, 236); /* #eedeee*/
+  --italy-red: rgb(206, 42, 55); /*ce2a37 */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  /* height: 100dvh; */
+  height: 85dvh;
+  background-color: #eedeee;
+}
+
+header {
+  height: 50px;
+  display: flex;
+  background-color: #019247ff; /* 00 (0%) - ff (100%) */
+  color: #eedeee;
+  font-weight: 700;
+  align-items: center;
+  padding: 0 1rem;
+  justify-content: space-between;
+  box-shadow: 0 0 3px #1b1c1d;
+}
+
+main {
+  flex-grow: 1;
+  display: grid;
+  height: 100%;
+  margin: 2rem auto;
+  width: 85%;
+  border: solid;
+  padding: 10px;
+  align-content: start;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h4 {
+  font-size: 40px;
+}
+
+.center p {
+  font-size: 30px;
+}
+
+.answer {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer {
+  font-size: 25px;
+}
+
+.answer button {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.hero2 {
+  text-align: center;
+  font-size: 25px;
+}
+
+.start-button-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.start-button-container button {
+  padding: 10px;
+  border-radius: 5px;
+}

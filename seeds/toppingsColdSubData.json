@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Tomato",
+    "price": 0.99
+  },
+  {
+    "name": "Onion",
+    "price": 0.99
+  }, 
+  {
+    "name": "Lettuce",
+    "price": 0.99
+  },
+  {
+    "name": "Banana pepper",
+    "price": 0.99
+  },
+  {
+    "name": "Pepperoncini",
+    "price": 0.99
+  }, 
+  {
+    "name": "Jalapeno",
+    "price": 0.99
+  },
+  {
+    "name": "Roasted red bell pepper",
+    "price": 0.99
+  },
+
+  {
+    "name": "Extra cheese",
+    "price": 1.25
+  }
+]

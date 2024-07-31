@@ -1,0 +1,335 @@
+<head>
+  <link rel="stylesheet" href="/css/updateInformation.css">
+</head>
+ 
+<div class="information-background">
+  <div class="container-information-header">
+    <center>
+      <h1>Update item</h1>
+      <h4>For admin only</h4>
+    </center>
+  </div>
+
+  <div class="container-update-item">
+    <div class="container-fluid item">
+      <form class="" id="updateMenuItem">
+        <div class="container py-3">
+          <h2 class="py-3">Update ({{item.name}}) item</h2>
+          <div class="forms">
+            <!--#region main  -->
+              <label>
+              <b style="color:#FF0000";>Please select or de-select to switch on or off!</b>
+            </label>
+            <br>
+
+            <input 
+              type="checkbox"
+              id="switchy" 
+              value="{{item.switchy}}"
+            >
+            <label>
+              <span class="slider"></span>
+              <b>{{item.name}}</b>
+            </label>
+
+            <br><br>
+
+              <label 
+                for="menu-item-name" 
+                class="form-label"
+              >
+                <b>ID</b>
+              </label>
+              <input 
+                id="id" 
+                type="text" 
+                class="form-control" 
+                value="{{item.id}}" 
+                placeholder="{{item.id}}"
+              >
+              <label 
+                for="name" 
+                class="form-label"
+              >
+                <b>Name</b>
+                <b style="color:#FF0000";>*required</b>
+              </label>
+              <input 
+                id="name" 
+                type="text" 
+                class="form-control" 
+                value="{{item.name}}" 
+                placeholder="{{item.name}}" 
+                required
+              >
+              <br><br>
+              <label 
+                for="description" 
+                class="form-label"
+              >
+                <b>Description</b>
+                <b style="color:#FF0000";>*required</b>
+              </label>
+              <input 
+                id="description" 
+                type="text" 
+                class="form-control"
+                value="{{item.description}}" 
+                placeholder="{{item.description}}" 
+                required
+              >
+              <br><br>
+              <label 
+                for="size1" 
+                class="form-label"
+              >
+                <b>Size 1</b>
+              </label>
+              <input 
+                id="size1" 
+                type="text" 
+                class="form-control"
+                value="{{item.size1}}" 
+                placeholder="{{item.size1}}" 
+              >
+              <br>
+              <label 
+                for="price1" 
+                class="form-label"
+              >
+                <b>Price 1</b>
+              </label>
+              <input 
+                id="price1" 
+                type="text" 
+                class="form-control"
+                value="{{item.price1}}" 
+                placeholder="{{item.price1}}" 
+              >
+              <br><br>
+              <label 
+                for="size2" 
+                class="form-label"
+              >
+                <b>Size 2</b>
+              </label>
+              <input 
+                id="size2" 
+                type="text" 
+                class="form-control"
+                value="{{item.size2}}" 
+                placeholder="{{item.size2}}" 
+              >
+              <br>
+              <label 
+                for="price2" 
+                class="form-label"
+              >
+                <b>Price 2</b>
+              </label>
+              <input 
+                id="price2" 
+                type="text" 
+                class="form-control"
+                value="{{item.price2}}" 
+                placeholder="{{item.price2}}" 
+              >
+              <br><br>
+              <label 
+                for="size3" 
+                class="form-label"
+              >
+                <b>Size 3</b>
+              </label>
+              <input 
+                id="size3" 
+                type="text" 
+                class="form-control"
+                value="{{item.size3}}" 
+                placeholder="{{item.size3}}" 
+              >
+              <br>
+              <label 
+                for="price3" 
+                class="form-label"
+              >
+                <b>Price 3</b>
+              </label>
+              <input 
+                id="price3" 
+                type="text" 
+                class="form-control"
+                value="{{item.price3}}" 
+                placeholder="{{item.price3}}" 
+              >
+              <br>
+            <!--#endregion -->
+
+            <!--#region main  -->
+              <label>
+                <b style="color:#FF0000";>Please select all addons that apply to the item!</b>
+              </label>
+              <br><br>
+              <input 
+                type="checkbox"
+                id="toppingPizzaFull" 
+                value="{{item.toppingPizzaFull}}"
+              >
+              <label>
+                <span class="slider"></span>
+                <b>Topping Pizza Full</b>
+              </label>
+              
+              <br>
+              <input 
+                type="checkbox"
+                id="toppingPizzaSlice" 
+                value="{{item.toppingPizzaSlice}}"
+              >
+              <label>
+                <span class="slider"></span>
+                <b>Topping Pizza Slice</b>
+              </label>
+              <br>
+              <input 
+                type="checkbox" 
+                id="toppingPizzaGlutenFree" 
+                value="{{item.toppingPizzaGlutenFree}}" 
+              >
+              <label>
+                <span class="slider"></span>
+                <b>Topping Pizza Gluten Free</b>
+              </label>
+              <br>
+              <input 
+                type="checkbox" 
+                id="saladDressing" 
+                value="{{item.saladDressing}}" 
+              >
+              <label>
+                <span class="slider"></span>
+                <b>Salad Dressing</b>
+              </label>
+              <br>
+              <input 
+                type="checkbox" 
+                id="marinaraSauce" 
+                value="{{item.marinaraSauce}}" 
+              >
+              <label>
+                <span class="slider"></span>
+                <b>Pasta Sauce</b>
+              </label>
+              <br>
+              <input 
+                type="checkbox" 
+                id="wingSauce" 
+                value="{{item.wingSauce}}" 
+              >
+              <label>
+                <span class="slider"></span>
+                <b>Wing Sauce</b>
+              </label>
+              <br>
+              <input 
+                type="checkbox" 
+                id="pastaType" 
+                value="{{item.pastaType}}" 
+              >
+              <label>
+                <span class="slider"></span>
+                <b>Pasta Type</b>
+              </label>
+              <br>
+              <input 
+                type="checkbox" 
+                id="toppingHotSub" 
+                value="{{item.toppingHotSub}}" 
+              >
+              <label>
+                <span class="slider"></span>
+                <b>Topping Hot Sub</b>
+              </label>
+              <br>
+              <input 
+                type="checkbox" 
+                id="toppingColdSub" 
+                value="{{item.toppingColdSub}}" 
+              >
+              <label>
+                <span class="slider"></span>
+                <b>Topping Cold Sub</b>
+              </label>
+              <br>
+              <input 
+                type="checkbox" 
+                id="toppingDesert" 
+                value="{{item.toppingDesert}}" 
+              >
+              <label>
+                <span class="slider"></span>
+                <b>Topping Desert</b>
+              </label>
+              <br>
+              <input 
+                type="checkbox" 
+                id="desertSauce" 
+                value="{{item.desertSauce}}" 
+              >
+              <label>
+                <span class="slider"></span>
+                <b>Desert Sauce</b>
+              </label>
+              <br><br>
+            <!--#endregion -->
+
+            <!--#region main  -->
+              <label 
+                for="category" 
+                class="form-label">
+                  <b>Choose a Category</b>
+                  <b style="color:#FF0000";>*required</b>
+              </label>
+              <select 
+                id="categories" 
+                name="categories" 
+                class="form-select"
+              >
+                <option value="{{item.categoryId}}" selected>
+                  Current ({{item.categoryId}})
+                </option>
+                {{#each cats as |cat|}}
+                  <option value="{{cat.id}}" 
+                  {{!-- id="categoryId" --}}
+                  >
+                    {{cat.name}}
+                  </option>
+                {{/each}}
+                require
+              </select>
+            <!--#endregion -->
+          </div>
+
+          <!--#region main  -->
+            <div class="d-flex justify-content-evenly">
+              <input 
+                type="hidden"
+                name="item-id"
+                value="{{item.id}}"
+              />
+              <button type="submit" class="btn btn-primary">Update</button>
+              <button 
+                class="btn btn-warning view-menu-button" onclick="history.back()"
+              >
+                Cancel
+              </button>
+              <button class="btn btn-danger" id="deleteButton" data-id="{{item.id}}">Delete</button>
+            </div>
+          <!--#endregion -->
+        </div>
+      </form> 
+    </div>
+  </div>
+</div>
+
+<script src="/js/updateMenuItem.js"></script>

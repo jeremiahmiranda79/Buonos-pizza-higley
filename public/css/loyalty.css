@@ -1,0 +1,10 @@
+.loyalty {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.loyalty h1 {
+  color: var(--buonos-red);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; 
+  font-family: var(--buonos-font);
+}

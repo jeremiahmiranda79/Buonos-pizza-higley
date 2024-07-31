@@ -1,0 +1,746 @@
+<head>
+  <link rel="stylesheet" href="/css/style-page.css">
+  <link rel="stylesheet" href="/css/collapsible.css">
+  <link rel="stylesheet" href="/css/items-details.css">
+  <link rel="stylesheet" href="/css/social.css">
+</head>
+
+<div class="page-container">
+  <br>
+  <center>
+    <button 
+      class="btn btn-success view-menu-button" 
+      onclick="history.back()"
+    >
+      Go Back
+    </button>
+    <br><br>
+  </center>
+
+  <div class="item-image">
+    <img src="{{item.image}}" alt="buonos-logo" class="d-block">
+  </div>
+
+  <section>
+    {{#if loggedIn}}
+      <center>
+        <a 
+          href="/menuitems/create" 
+          class="active btn btn-primary"
+        >
+          Update Image for Item {{item.name}} {{category.name}}
+        </a>
+      </center>
+      <br>
+    {{/if}}
+  </section>
+
+  <div class="sub-section buonos-font">
+    <h2>{{item.name}}</h2>
+    <h5>{{item.description}}</h5>
+
+    {{#if item.size1}}
+      <h4>{{item.size1}} {{item.price1}}</h4>
+    {{/if}}
+
+    {{#if item.size2}}
+      <h4>{{item.size2}} {{item.price2}}</h4>
+    {{/if}}
+    
+    {{#if item.size3}}
+      <h4>{{item.size3}} {{item.price3}}</h4>
+    {{/if}}
+
+    {{#if loggedIn}}
+      <a 
+        href="/menuitems/update/{{item.id}}" 
+        class="active btn btn-primary"
+      >
+        Update {{item.name}}
+      </a>
+    {{/if}}
+  </div>
+
+  {{#if item.toppingPizzaFull}}
+    <section class="collapsible-container">
+      <section class="card" id="html-section-tags">
+        <button class="collapsible">
+          <h4>See all pizza toppings</h4>
+        </button>
+
+        <div class="content">
+          <table>
+            <br>
+            <tr>
+              <th><h4>Additional pizza toppings are sold by the each</h4></th>
+            </tr>
+
+            {{#each toppingsPizza as |tp|}}
+              <tr>
+                <td>
+                  <h5>
+                    {{tp.name}} - (Full: <b>${{tp.priceFull}}</b>) (Half: <b>${{tp.priceHalf}}</b>)
+                  </h5>
+
+                  {{#if loggedIn}}
+                    <a 
+                      href="/pizzaTopping/UpdatePizzaTopping/{{tp.id}}" 
+                      class="active btn btn-primary"
+                    >
+                      Update {{tp.name}}
+                    </a>
+                  {{/if}}
+                </td>
+              </tr>
+            {{/each}}
+          </table>
+          <br>
+        </div>
+      </section>
+
+      {{#if loggedIn}}
+        <section>
+          <center>
+            <a 
+              href="/pizzaTopping/create" 
+              class="active btn btn-primary"
+            >
+              Create Pizza Topping
+            </a>
+          </center>
+        </section>
+      {{/if}}
+    </section>
+  {{/if}}
+
+  {{#if item.toppingPizzaSlice}}
+    <section class="collapsible-container">
+      <section class="card" id="html-section-tags">
+        <button class="collapsible">
+          <h4>See all single pizza slice toppings</h4>
+        </button>
+
+        <div class="content">
+          <table>
+            <br>
+            <tr>
+              <th><h4>Additional pizza toppings are sold by the each</h4></th>
+            </tr>
+            {{#each toppingsPizza as |tp|}}
+              <tr>
+                <td>
+                  <h5>
+                    {{tp.name}} - <b>${{tp.priceSlice}}</b>
+                  </h5>
+                  {{#if loggedIn}}
+                    <a 
+                      href="/pizzaTopping/UpdatePizzaTopping/{{tp.id}}"
+                      class="active btn btn-primary"
+                    >
+                      Update {{tp.name}}
+                    </a>
+                  {{/if}}
+                </td>
+              </tr>
+            {{/each}}
+          </table>
+          <br>
+        </div>
+      </section>
+      {{#if loggedIn}}
+        <section>
+          <center>
+            <a 
+              href="/pizzaTopping/create" 
+              class="active btn btn-primary"
+            >
+              Create Pizza Topping Slice
+            </a>
+          </center>
+        </section>
+      {{/if}}
+    </section>
+  {{/if}}
+
+  {{#if item.toppingPizzaGlutenFree}}
+    <section class="collapsible-container">
+      <section class="card" id="html-section-tags">
+        <button class="collapsible">
+          <h4>See all gluten free pizza toppings</h4>
+        </button>
+
+        <div class="content">
+          <table>
+            <br>
+            <tr>
+              <th><h4>Additional pizza toppings are sold by the each</h4></th>
+            </tr>
+            {{#each toppingsPizza as |tp|}}
+              <tr>
+                <td>
+                  <h5>
+                    {{tp.name}} - <b>${{tp.priceGlutenFree}}</b>
+                  </h5>
+                  {{#if loggedIn}}
+                    <a 
+                      href="/pizzaTopping/UpdatePizzaTopping/{{tp.id}}"
+                      class="active btn btn-primary"
+                    >
+                      Update {{tp.name}}
+                    </a>
+                  {{/if}}
+                </td>
+              </tr>
+            {{/each}}
+          </table>
+          <br>
+        </div>
+      </section>
+      {{#if loggedIn}}
+        <section>
+          <center>
+            <a 
+              href="/pizzaTopping/create" 
+              class="active btn btn-primary"
+            >
+              Create Gluten Free Pizza Toppings
+            </a>
+          </center>
+        </section>
+      {{/if}}
+    </section>
+  {{/if}}
+
+  {{#if item.stuffingCalzone}}
+    <section class="collapsible-container">
+      <section class="card" id="html-section-tags">
+        <button class="collapsible">
+          <h4>See all calzone stuffings</h4>
+        </button>
+
+        <div class="content">
+          <table>
+            <br>
+            <tr>
+              <th><h4>Additional calzone stuffings are sold by the each</h4></th>
+            </tr>
+            {{#each stuffingsCalzone as |sc|}}
+              <tr>
+                <td>
+                  <h5>
+                    {{sc.name}} - (Small: <b>${{sc.priceSmall}}</b>) (Large: <b>${{sc.priceLarge}}</b>)
+                  </h5>
+
+                  {{#if loggedIn}}
+                    <a 
+                      href="/sauceDesert/updateSauceDesert/{{sd.id}}"
+                      class="active btn btn-primary"
+                    >
+                      Update {{sd.name}}
+                    </a>
+                  {{/if}}
+                </td>
+              </tr>
+            {{/each}}
+          </table>
+          <br>
+        </div>
+      </section>
+
+      {{#if loggedIn}}
+        <section>
+          <center>
+            <a 
+              href="/sauceDesert/createSauceDesert" 
+              class="active btn btn-primary"
+            >
+              Create Sauce Desert
+            </a>
+          </center>
+        </section>
+      {{/if}}
+    </section>
+  {{/if}}
+
+  {{#if item.toppingHotSub}}
+    <section class="collapsible-container">
+      <section class="card" id="html-section-tags">
+        <button class="collapsible">
+          <h4>
+            See all hot sub topppings
+          </h4>
+        </button>
+
+        <div class="content">
+          <table>
+            <br>
+            <tr>
+              <th><h4>Additional hot sub topppings are sold by the each</h4></th>
+            </tr>
+
+            {{#each toppingsHotSub as |ths|}}
+              <tr>
+                <td>
+                  <h5>
+                    {{ths.name}} - <b>${{ths.price}}</b>
+                  </h5>
+                    {{#if loggedIn}}
+                      <a 
+                        href="/toppingHotSub/updateToppingHotSub/{{ths.id}}"
+                        class="active btn btn-primary"
+                      >
+                        Update {{ths.name}}
+                      </a>
+                    {{/if}}
+                </td>
+              </tr>
+            {{/each}}
+          </table>
+          <br>
+        </div>
+      </section>
+      <br>
+
+      {{#if loggedIn}}
+        <section>
+          <center>
+            <a 
+              href="/toppingHotSub/createToppingHotSub" 
+              class="active btn btn-primary"
+            >
+              Create Hot Sub Toppings
+            </a>
+          </center>
+        </section>
+        <br>
+      {{/if}}
+    </section>
+  {{/if}}
+
+  {{#if item.toppingColdSub}}
+    <section class="collapsible-container">
+      <section class="card" id="html-section-tags">
+        <button class="collapsible">
+          <h4>
+            See all cold sub topppings
+          </h4>
+        </button>
+
+        <div class="content">
+          <table>
+            <br>
+            <tr>
+              <th><h4>Additional cold sub topppings are sold by the each</h4></th>
+            </tr>
+
+            {{#each toppingsColdSub as |tcs|}}
+              <tr>
+                <td>
+                  <h5>
+                    {{tcs.name}} - <b>${{tcs.price}}</b>
+                  </h5>
+
+                  {{#if loggedIn}}
+                    <a 
+                      href="/toppingColdSub/updateToppingColdSub/{{tcs.id}}"
+                      class="active btn btn-primary"
+                    >
+                      Update {{tcs.name}}
+                    </a>
+                  {{/if}}
+                </td>
+              </tr>
+            {{/each}}
+          </table>
+          <br>
+        </div>
+      </section>
+      {{#if loggedIn}}
+        <section>
+          <center>
+            <a 
+              href="/toppingColdSub/createToppingColdSub" 
+              class="active btn btn-primary"
+            >
+              Create Cold Sub Toppings
+            </a>
+          </center>
+        </section>
+      {{/if}}
+    </section>
+  {{/if}}
+
+  {{#if item.wingSauce}}
+    <section class="collapsible-container">
+      <section class="card" id="html-section-tags">
+        <button class="collapsible">
+          <h4>
+            See all wing sauces
+          </h4>
+        </button>
+
+        <div class="content">
+          <table>
+            <br>
+            <tr>
+              <th><h4>Additional wing sauces are sold by the each</h4></th>
+            </tr>
+            {{#each sauceWing as |sw|}}
+              <tr>
+                <td>
+                  <h5>
+                    {{sw.name}} - <b>${{sw.price3oz}}</b>
+                  </h5>
+                  {{#if loggedIn}}
+                    <a 
+                      href="/sauceWing/UpdateSauceWing/{{sw.id}}"
+                      class="active btn btn-primary"
+                    >
+                      Update {{sw.name}}
+                    </a>
+                  {{/if}}
+                </td>
+  
+              </tr>
+            {{/each}}
+          </table>
+          <br>
+        </div>
+      </section>
+
+      {{#if loggedIn}}
+        <section>
+          <center>
+            <a 
+              href="/sauceWing/create" 
+              class="active btn btn-primary"
+            >
+              Create Wing Sauces
+            </a>
+          </center>
+        </section>
+      {{/if}}
+    </section>
+  {{/if}}
+
+  {{#if item.saladDressing}}
+    <section class="collapsible-container">
+      <section class="card" id="html-section-tags">
+        <button class="collapsible">
+          <h4>
+            See all salad dressings
+          </h4>
+        </button>
+
+        <div class="content">
+          <table>
+            <br>
+            <tr>
+              <th><h4>Additional salad dressings are sold by the each</h4></th>
+            </tr>
+            {{#each dressing as |d|}}
+              <tr>
+                <td>
+                  <h5>
+                    {{d.name}} - <b>${{d.price3oz}}</b>
+                  </h5>
+                  {{#if loggedIn}}
+                    <a 
+                      href="/dressing/updateDressing/{{d.id}}"
+                      class="active btn btn-primary"
+                    >
+                      Update {{d.name}}
+                    </a>
+                  {{/if}}
+                </td>
+              </tr>
+            {{/each}}
+          </table>
+          <br>
+        </div>
+      </section>
+        {{#if loggedIn}}
+          <section>
+            <center>
+              <a 
+                href="/dressing/create"
+                class="active btn btn-primary"
+              >
+                Create Dressings
+              </a>
+            </center>
+          </section>
+        {{/if}}
+    </section>
+  {{/if}}
+
+  {{#if item.marinaraSauce}}
+    <section class="collapsible-container">
+      <section class="card" id="html-section-tags">
+        <button class="collapsible">
+          <h4>
+            See all sauce options
+          </h4>
+        </button>
+
+        <div class="content">
+          <table>
+            <br>
+            <tr>
+              <th><h4>Additional sauces are sold by the each</h4></th>
+            </tr>
+            {{#each saucePasta as |sp|}}
+              <tr>
+                <td>
+                  <h5>
+                    <b>{{sp.name}}</b>
+                  </h5>
+
+                  {{#if loggedIn}}
+                    <a 
+                      href="/saucePasta/UpdateSaucePasta/{{sp.id}}" 
+                      class="active btn btn-primary"
+                    >
+                      Update {{sp.name}}
+                    </a>
+                  {{/if}}
+                </td>
+              </tr> 
+            {{/each}}
+          </table>
+          <br>
+        </div>
+      </section>
+      {{#if loggedIn}}
+        <section>
+          <center>
+            <a 
+              href="/saucePasta/create" 
+              class="active btn btn-primary"
+            >
+              Create Pasta Sauce
+            </a>
+          </center>
+        </section>
+      {{/if}}
+    </section>
+  {{/if}}
+
+  {{#if item.pastaType}}
+    <section class="collapsible-container">
+      <section class="card" id="html-section-tags">
+        <button class="collapsible">
+          <h4>
+            See all pasta options
+          </h4>
+        </button>
+
+        <div class="content">
+          <table>
+            <br>
+            <tr>
+              <th><h4>Choice of pasta</h4></th>
+            </tr>
+
+            {{#each pasta as |p|}}
+              <tr>
+                <td>
+                  <h5>
+                    {{p.name}}
+                  </h5>
+                  {{#if loggedIn}}
+                    <a 
+                      href="/pasta/updatePasta/{{p.id}}"
+                      class="active btn btn-primary"
+                    >
+                      Update {{p.name}}
+                    </a>
+                  {{/if}}
+                </td>
+              </tr>
+            {{/each}}
+          </table>
+          <br>
+        </div>
+      </section>
+      {{#if loggedIn}}
+        <section>
+          <center>
+            <a 
+              href="/pasta/createPasta" 
+              class="active btn btn-primary"
+            >
+              Create Pastas
+            </a>
+          </center>
+        </section>
+      {{/if}}
+    </section>
+  {{/if}}
+
+  {{#if item.desertSauce}}
+    <section class="collapsible-container">
+        <section class="card" id="html-section-tags">
+          <button class="collapsible">
+            <h4>
+              See all desert sauces
+            </h4>    
+          </button>
+          <div class="content">
+            <table>
+              <br>
+              <tr>
+                <th><h4>Choice of dessert sauce</h4></th>
+              </tr>
+              {{#each sauceDesert as |sd|}}
+                <tr>
+                  <h5>
+                    <td><h5>{{sd.name}}</h5>
+
+                  </h5>
+                    {{#if loggedIn}}
+                      <a 
+                        href="/sauceDesert/updateSauceDesert/{{sd.id}}"
+                        class="active btn btn-primary"
+                      >
+                        Update {{sd.name}}
+                      </a>
+                    {{/if}}
+                  </td>
+                </tr>
+              {{/each}}
+            </table>
+            <br>
+          </div>
+        </section>
+        {{#if loggedIn}}
+          <section>
+            <center>
+              <a 
+                href="/sauceDesert/createSauceDesert" 
+                class="active btn btn-primary"
+              >
+                Create Sauce Desert
+              </a>
+            </center>
+          </section>
+        {{/if}}
+    </section>
+  {{/if}}
+
+  {{!-- <section class="desert-topping">
+    {{#if item.toppingDesert}}
+      <section class="card" id="html-section-tags">
+        <button class="collapsible">See all desert topppings</button>
+        <div class="content">
+          <table>
+            <tr>
+              <th>Additional desert toppings are sold by the each</th>
+            </tr>
+            {{#each toppingsDesert as |td|}}
+              <tr>
+                <td>{{td.name}} - (3 Oz: <b>${{td.price}}</b>)
+                  {{#if loggedIn}}
+                    <br>
+                    <a 
+                      href="/toppingDesert/updateToppingDesert/{{td.id}}"
+                      class="active btn btn-primary"
+                    >
+                      Update {{td.name}}
+                    </a>
+                  {{/if}}
+                </td>
+              </tr>
+            {{/each}}
+          </table>
+        </div>
+      </section>
+      <br>
+      {{#if loggedIn}}
+        <section>
+          <center>
+            <a 
+              href="/toppingDesert/createToppingDesert" 
+              class="active btn btn-primary"
+            >
+              Create Topping Desert
+            </a>
+          </center>
+        </section>
+        <br>
+      {{/if}}
+    {{/if}}
+  </section> --}}
+
+  <center>
+    <br>
+    <button 
+      class="btn btn-success view-menu-button" 
+      onclick="history.back()"
+    >
+      Go Back
+    </button>
+  </center>
+
+  <div class="social-footer">
+    {{#each information as |i|}}
+      <h5>{{i.description}}</h5>
+    {{/each}}
+
+    {{#each information as |i|}}
+      <h4>{{i.company}}</h4>
+    {{/each}}
+
+    <a href="https://www.google.com/maps/dir//1464+E+Williams+Field+Rd,+Gilbert,+AZ+85295/@33.3074096,-111.8409328,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x872bac74ffc357e1:0xed805996e92f4bc4!2m2!1d-111.7585316!2d33.3074368?entry=ttu">
+      {{#each information as |i|}}
+        <h4 style="text-decoration:none; color:black;">{{i.address}}</h4>
+      {{/each}}
+    </a>
+
+    <a href="tel:+14808991200">
+      {{#each information as |i|}}
+        <h4 style="text-decoration:none; color:black;">{{i.phoneNumber}}</h4>
+      {{/each}}
+    </a>
+
+    <a href="mailto: buonosgilbert@yahoo.com">
+      {{#each information as |i|}}
+        <h4 style="text-decoration:none; color:black;">{{i.email}}</h4> 
+      {{/each}}
+    </a>
+
+    <div class="row">
+      <div class="column">
+        <a href="https://www.facebook.com/people/Buonos-PIZZA-Gilbert/100067421335508/?mibextid=ZbWKwL" class="button-social">
+          <i class="fa-brands fa-square-facebook" style="text-decoration:none; color:black; font-size:30px;"></i>
+        </a>
+      </div>
+
+      <div class="column">
+        <a href="https://www.instagram.com/buonospizzagilbert/?hl=en"  class="button-social">
+          <i class="fa-brands fa-instagram" style="text-decoration:none; color:black; font-size:30px;"></i>
+        </a>
+      </div>
+
+      <div class="column">
+        <a href="https://www.yelp.com/biz/buono-s-pizza-gilbert"  class="button-social">
+          <i class="fa-brands fa-yelp" style="text-decoration:none; color:black; font-size:30px;"></i>
+        </a>
+      </div>
+
+      <div class="column">
+        <a href="https://www.google.com/maps/dir//1464+E+Williams+Field+Rd,+Gilbert,+AZ+85295/@33.3074096,-111.8409328,12z/data=!4m6!4m5!1m0!1m2!1m1!1s0x872bac74ffc357e1:0xed805996e92f4bc4!3e0"  class="button-social">
+          <i class="fa-brands fa-google" style="text-decoration:none; color:black; font-size:30px;"></i>
+        </a>
+      </div>
+    </div>
+
+    <p>
+      COPYRIGHT &copy; 2024 BUONO'S GILBERT - ALL RIGHTS RESERVED. SORRY NO CHECKS. GROUPS OF 8 OR MORE 15% GRATUITY Will BE INCLUDED. ALL PRICES SUBJECT TO CHANGE WITHOUT NOTICE.
+    </p> 
+
+    <h5>🤓Powered by: SmileyFaceStudios()🤓</h5>
+  </div>
+</div>
+
+<script src="/js/collapsable.js"></script>

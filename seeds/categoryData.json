@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Pizza",
+    "image": "/images/menu-pizza-regular-neopolitan-2.jpg",
+    "switchy": true
+  },
+  {
+    "name": "Specialty Pizza",
+    "image": "/images/menu-specialty-2.jpg",
+    "switchy": true
+  },
+  {
+    "name": "Gluten Free",
+    "image": "/images/menu-gluten-free-10.jpg",
+    "switchy": true
+  },
+  {
+    "name": "Pizza Slice",
+    "image": "/images/menu-pizza-slice-3.jpg",
+    "switchy": true
+  },
+  {
+    "name": "Appetizer",
+    "image": "/images/menu-app-wings-6.jpg",
+    "switchy": true
+  },
+  {
+    "name": "Calzone",
+    "image": "/images/menu-calzone-10.jpg",
+    "switchy": true
+  },
+  {
+    "name": "Stromboli",
+    "image": "/images/menu-stromboli-4.jpg",
+    "switchy": true
+  },
+  {
+    "name": "Sausage Roll",
+    "image": "/images/menu-sausage-roll-2.jpg",
+    "switchy": true
+  },
+  {
+    "name": "Salad",
+    "image": "/images/menu-salad.jpg",
+    "switchy": true
+  },
+  {
+    "name": "Entree",
+    "image": "/images/menu-entree.jpg",
+    "switchy": true
+  },
+  {
+    "name": "Hot Sub",
+    "image": "/images/menu-hot-sub-2.jpg",
+    "switchy": true
+  },
+  {
+    "name": "Cold Sub",
+    "image": "/images/menu-boars-head-logo-2.jpg",
+    "switchy": true
+  },
+  {
+    "name": "Side Order",
+    "image": "/images/menu-side-meatballs-2.jpg",
+    "switchy": true
+  },
+  {
+    "name": "Dessert",
+    "image": "/images/menu-dessert.jpg",
+    "switchy": true
+  },
+  {
+    "name": "Beverage",
+    "image": "/images/menu-soda-fountain-2.jpg",
+    "switchy": true
+  },
+  {
+    "name": "NY Specialty",
+    "image": "/images/menu-new-york.jpg",
+    "switchy": true
+  }
+]

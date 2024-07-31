@@ -1,0 +1,142 @@
+<head>
+  <link rel="stylesheet" href="/css/delivery.css">
+  <link rel="stylesheet" href="/css/social.css">
+  <link rel="stylesheet" href="/css/style-page.css">
+</head>
+
+<br>
+
+{{!-- <div class="sub-section buonos-font">
+  <section label="takeout-dinein">
+    {{#each homePage as |hp|}}
+      {{#if hp.name4Switch}}
+        <h2>{{hp.name4}}</h1>
+        <h5>{{hp.description4}}</h5>
+      {{/if}}
+    {{/each}}
+  </section>
+</div> --}}
+
+
+{{!-- <center>
+  <a href="/menu-1" class="active btn btn-primary" style="background-color: var(--buonos-red)">View our full menu here!</a>
+</center>
+
+<br> --}}
+
+<div class="sub-section buonos-font">
+  <section label="delivery">
+    {{#each homePage as |hp|}}
+      {{#if hp.name5_1Switch}}
+        <h2>{{hp.name5_1}}</h2>
+        <h4>{{hp.description5_1}}</h4>
+        <h5>Please click your favorite online ordering app. Our favorite is Slice!</h5>
+          {{#if hp.slice_switch}}
+            <a href="https://slicelife.com/restaurants/az/gilbert/85295/buonos-pizza/menu?utm_campaign=order_now_button&utm_medium=referral&utm_source=buonosgilbert.com">
+              <img src="/images/slice-logo-600x200.jpg" class="btn-delivery-main"></img>
+            </a>
+          {{/if}}
+
+          <ul class="nav flex-row delivery">
+            {{#if hp.doordash_switch}}
+              <a href="https://www.doordash.com/store/buonos-pizza-gilbert-gilbert-1778796/">
+                <img src="/images/delivery-doordash-3.jpg" class="btn-delivery"></img>
+              </a>
+            {{/if}}
+
+            {{#if hp.ubereats_switch}}
+              <a href="https://www.ubereats.com/store/buonos-pizza-gilbert/gJH4x-XFTACHDY7vQuqWWg">
+                <img src="/images/delivery-uber-eats.jpg" class="btn-delivery"></img>
+              </a>
+            {{/if}}
+
+            {{#if hp.grubhub_switch}}
+              <a href="https://www.grubhub.com/restaurant/buonos-pizza-gilbert-1464-e-williams-field-rd-gilbert/2776436">
+                <img src="/images/delivery-grubhub.jpg" class="btn-delivery"></img>
+              </a>
+            {{/if}}
+          </ul>
+
+      {{/if}}
+
+      {{#if name5_2Switch}}
+        <p>{{description5_2}}</p>
+      {{/if}}
+
+      {{#if name5_3Switch}}
+        <h4>{{description5_3}}</h4>
+      {{/if}}
+
+      {{#if hp.name5_4Switch}}
+        <p>{{hp.description5_4}}</p> 
+      {{/if}}
+
+      {{#if hp.name5_5Switch}}
+        <p>{{hp.description5_5}}</p>
+      {{/if}}
+
+    {{/each}}
+  </section>
+</div>
+
+<br>
+
+<div class="social-footer">
+  {{#each information as |i|}}
+    <h5>{{i.description}}</h5>
+  {{/each}}
+
+  {{#each information as |i|}}
+    <h4>{{i.company}}</h4>
+  {{/each}}
+
+  <a href="https://www.google.com/maps/dir//1464+E+Williams+Field+Rd,+Gilbert,+AZ+85295/@33.3074096,-111.8409328,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x872bac74ffc357e1:0xed805996e92f4bc4!2m2!1d-111.7585316!2d33.3074368?entry=ttu">
+    {{#each information as |i|}}
+      <h4 style="text-decoration:none; color:black;">{{i.address}}</h4>
+    {{/each}}
+  </a>
+
+  <a href="tel:+14808991200">
+    {{#each information as |i|}}
+      <h4 style="text-decoration:none; color:black;">{{i.phoneNumber}}</h4>
+    {{/each}}
+  </a>
+
+  <a href="mailto: buonosgilbert@yahoo.com">
+    {{#each information as |i|}}
+      <h4 style="text-decoration:none; color:black;">{{i.email}}</h4> 
+    {{/each}}
+  </a>
+
+  <div class="row">
+    <div class="column">
+      <a href="https://www.facebook.com/people/Buonos-PIZZA-Gilbert/100067421335508/?mibextid=ZbWKwL" class="button-social">
+        <i class="fa-brands fa-square-facebook" style="text-decoration:none; color:black; font-size:30px;"></i>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="https://www.instagram.com/buonospizzagilbert/?hl=en"  class="button-social">
+        <i class="fa-brands fa-instagram" style="text-decoration:none; color:black; font-size:30px;"></i>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="https://www.yelp.com/biz/buono-s-pizza-gilbert"  class="button-social">
+        <i class="fa-brands fa-yelp" style="text-decoration:none; color:black; font-size:30px;"></i>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="https://www.google.com/maps/dir//1464+E+Williams+Field+Rd,+Gilbert,+AZ+85295/@33.3074096,-111.8409328,12z/data=!4m6!4m5!1m0!1m2!1m1!1s0x872bac74ffc357e1:0xed805996e92f4bc4!3e0"  class="button-social">
+        <i class="fa-brands fa-google" style="text-decoration:none; color:black; font-size:30px;"></i>
+      </a>
+    </div>
+  </div>
+
+  <p>
+    COPYRIGHT &copy; 2024 BUONO'S GILBERT - ALL RIGHTS RESERVED. SORRY NO CHECKS. GROUPS OF 8 OR MORE 15% GRATUITY Will BE INCLUDED. ALL PRICES SUBJECT TO CHANGE WITHOUT NOTICE.
+  </p> 
+
+  <h5>🤓Powered by: SmileyFaceStudios()🤓</h5>
+</div>

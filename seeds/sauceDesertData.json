@@ -1,0 +1,14 @@
+[
+  { 
+    "name": "Chocolate sauce",
+    "price": 0.75
+  },
+  { 
+    "name": "Strawberry sauce",
+    "price": 0.75
+  },
+  {
+    "name": "Caramel sauce",
+    "price": 0.75
+  }
+]

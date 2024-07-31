@@ -1,0 +1,26 @@
+[
+  { 
+    "name": "Ranch Dressing",
+
+    "price3oz": 0.75,
+    "price16oz": 3.50
+  },
+  {
+    "name": "Blue Cheese Dressing",
+
+    "price3oz": 0.75,
+    "price16oz": 3.50
+  },
+  {
+    "name": "Italian Dressing",
+
+    "price3oz": 0.75,
+    "price16oz": 3.50
+  },
+  {
+    "name": "Caesar Dressing",
+
+    "price3oz": 0.75,
+    "price16oz": 3.50
+  }
+]

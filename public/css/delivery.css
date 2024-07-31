@@ -1,0 +1,49 @@
+.delivery {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.delivery h1 {
+  color: var(--buonos-red);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; 
+  font-family: var(--buonos-font);
+}
+
+.btn-delivery-main {
+  box-shadow: 4px 4px 8px var(--shadow);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+  width: 197px;
+  height: 65px;
+  border-radius: 4px;
+
+  
+}
+
+.btn-delivery{
+  box-shadow: 4px 4px 8px var(--shadow);
+  margin-bottom: 10px;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+  width: 65px;
+  height: 65px;
+  border-radius: 4px;
+
+  background-color: aliceblue;
+}
+
+@media (min-width: 768px) {
+  .delivery p{
+    padding-left: 400px;
+    padding-right: 400px;
+  }
+
+  .delivery h4{
+    padding-left: 400px;
+    padding-right: 400px;
+  }
+}

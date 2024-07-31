@@ -1,0 +1,23 @@
+.container-information-header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.container-information-header h1 {
+  font-family: var(--buonos-font);
+  color: var(--buonos-red);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 40px;
+}
+
+@media (min-width: 768px) {
+  .information-background {
+    padding-top: 55px;
+    padding-bottom: 20px;
+  }
+
+  .container-update-item {
+    margin-right: 25%;
+    margin-left: 25%;
+  }
+}

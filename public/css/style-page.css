@@ -1,0 +1,32 @@
+.buonos-font h1, h2 {
+  font-family: var(--buonos-font);
+  color: var(--buonos-red);
+  text-shadow: var(--stroke-1);
+}
+
+.page-container {
+  /* margin-top: 100px; */
+}
+
+.heading h1 {
+  font-size: 45px;
+}
+
+.sub-section {
+  margin-right: 10%;
+  margin-left: 10%; 
+  text-align: center;
+};
+
+/* @media (max-width: 425px) {
+  .page-container {
+    margin-top: 250px;
+  }
+} */
+
+/* @media (max-width: 768px) {
+  .sub-section {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+} */

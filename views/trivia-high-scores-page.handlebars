@@ -1,0 +1,64 @@
+<link rel="stylesheet" href="/css/trivia.css" />
+
+<style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: rgb(243, 218, 218);
+    border: 1px solid black;
+    padding: 10px;
+  }
+
+  .grid-container h1 {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: rgb(216, 177, 177);
+  }
+
+  .start-button {
+    font-size: 30px;
+    margin: 20px;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: rgb(216, 177, 177);
+  }
+
+  .start-button a {
+    font-weight: bold;
+    color: inherit;
+    padding: 5px;
+    
+  }
+
+  @media(max-width: 768px) {
+    
+  }
+</style>
+
+<div id="root">
+  <header>
+    <h2 class="title">High Scores</h2>
+  </header>
+
+  <section id="question"></section>
+
+  <main >
+
+    <div class="grid-container">
+      {{#each score as |s|}}
+        <h1>{{s.name}}</h1>
+        <h1>{{s.score}}</h1>
+      {{/each}}
+    </div>
+    
+    
+
+    <section id="buttons">
+      <center>
+        <button class="start-button"><a href="/trivia-home-page">Go Back</a></button>
+      </center>
+    </section>
+
+  </main>
+
+</div>

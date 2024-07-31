@@ -1,0 +1,37 @@
+[
+  {
+    "first_name":"Admin",
+    "last_name":"Admin",
+    "admin":true,
+    "email":"admin@admin.com",
+    "password":"admin"
+  },
+  {
+    "first_name":"Jimmy",
+    "last_name":"Pante",
+    "admin":true,
+    "email":"jimmy@pante.com",
+    "password":"password"
+  },
+  {
+    "first_name":"James",
+    "last_name":"Pante",
+    "admin":true,
+    "email":"james@pante.com",
+    "password":"password"
+  },
+  {
+    "first_name":"Shelly",
+    "last_name":"Pante",
+    "admin":true,
+    "email":"shelly@pante.com",
+    "password":"password"
+  },
+  {
+    "first_name":"Dave",
+    "last_name":"Goode",
+    "admin":true,
+    "email":"dave@goode.com",
+    "password":"password"
+  }
+] 

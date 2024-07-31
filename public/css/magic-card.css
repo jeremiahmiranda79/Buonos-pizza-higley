@@ -1,0 +1,217 @@
+.body {
+  
+  /* height: 100vh; */
+
+  /* height: 70vh; */
+
+  /* height: 100%; */
+  /* width: 100%; */
+
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* background: url("../images/place.jpg"); */
+  /* background-size: cover; */
+
+  /* filter: blur(8px); */
+  /* -webkit-filter: blur(8px); */
+
+  /* background-size: contain;
+    background-repeat: no-repeat; */
+}
+
+.body {
+  background-image: url('../images/place-2.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.magic-card-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  /* box-shadow: 8px 4px 8px 5px rgba(0, 0, 0, 0.6); */
+  margin-bottom: 20px ;
+}
+
+/* .magic-card-container .magic-card {
+  position: relative;
+  display: flex;
+  margin: 30px;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 480px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 20px 20px, 50px rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  border-radius: 15px;
+  backdrop-filter: blur(8px);
+}
+
+.magic-card-container .magic-card .magic-card-item {
+  position: absolute;
+  transform: translateY(150px);
+  opacity: 0;
+  text-align: center;
+  padding: 20px;
+  transition: all 0.5s ease;
+} */
+
+/* .magic-card-container .magic-card:hover .magic-card-item {
+  transform: translateY(0);
+  opacity: 1;
+} */
+
+/* .magic-card-container .magic-card .magic-card-item h2 {
+  position: absolute;
+  font-size: 9rem;
+  top: -60px;
+  right: 20px;
+  color: rgba(255, 255, 255, 0.2);
+  pointer-events: none;
+} */
+
+/* .magic-card-container .magic-card .magic-card-item h3 {
+  position: relative;
+  font-size: 2.2rem;
+  color: white;
+} */
+
+/* .magic-card-container .magic-card .magic-card-item p {
+  position: relative;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+} */
+
+/* .magic-card-container .magic-card .magic-card-item a {
+  display: inline-block;
+  background: #fff;
+  padding: 8px 20px;
+  text-decoration: none;
+  color: #000;
+  border-radius: 20px;
+  margin-top: 15px;
+} */
+
+.magic-card-container .magic-card-1,
+.magic-card-container .magic-card-2 {
+  position: relative;
+  display: flex;
+  margin: 30px;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 480px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 20px 20px, 50px rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  border-radius: 15px;
+  backdrop-filter: blur(8px);
+}
+
+.magic-card-container .magic-card:hover {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.magic-card-container .magic-card-1:hover {
+  background: url(../images/magnet-1.jpg);
+  background-position: center;
+  background-size: 100% auto;
+  /* animation: rotate 1.4s linear infinite; */
+}
+
+.magic-card-container .magic-card-2:hover {
+  background: url(../images/magnet-full-2.jpg);
+  background-position: center;
+  background-size: 100% auto;
+}
+
+/* @keyframes rotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+} */
+
+@media (max-width: 1440px) {
+  .magic-card-container {
+    min-height: 85vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  .magic-card-container {
+    min-height: 60vh;
+  }
+
+  .magic-card-container .magic-card-1,
+  .magic-card-container .magic-card-2 {
+    height: 400px;
+    width: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .magic-card-container {
+    min-height: 45vh;
+  }
+
+  .magic-card-container .magic-card-1,
+  .magic-card-container .magic-card-2 {
+    height: 300px;
+    width: 240px;
+  }
+}
+
+@media (max-width: 425px) {
+  .magic-card-container {
+    min-height: 25vh;
+  }
+
+  .magic-card-container .magic-card-1,
+  .magic-card-container .magic-card-2 {
+  
+    margin: 10px;
+    height: 184.6153846153846px;
+    width: 147.6923076923077px;
+  }
+}
+
+@media (max-width: 375px) {
+  .magic-card-container {
+    min-height: 22vh;
+  }
+
+  .magic-card-container .magic-card-1,
+  .magic-card-container .magic-card-2 {
+    margin: 10px;
+    height: 171.4285714285714px;
+    width: 137.1428571428571px;
+  }
+}
+
+@media (max-width: 320px) {
+  .magic-card-container {
+    min-height: 18vh;
+  }
+
+  .magic-card-container .magic-card-1,
+  .magic-card-container .magic-card-2 {
+    margin: 10px;
+    height: 150px;
+    width: 120px;
+  }
+}

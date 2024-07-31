@@ -1,0 +1,98 @@
+<head>
+  <link rel="stylesheet" href="/css/updateInformation.css">
+</head>
+
+<div class="information-background">
+	<div class="container-information-header">
+    <center>
+      <h1>Update Topping Desert</h1>
+      <h4>For admin only</h4>
+    </center>
+  </div>
+
+	<div class="container-update-item">
+		<div class="container-fluid item">
+			<form id="updateToppingDesert">
+				<div class="container py-3">
+					<h2>Update ({{td.name}}) Topping Desert</h2>
+					<div class="forms">
+						<label 
+							for="menu-item-name" 
+							class="form-label"
+						>
+							<b>ID</b>
+						</label>
+						<input 
+							id="id" 
+							type="text" 
+							class="form-control" 
+							value="{{td.id}}" 
+							placeholder="{{td.id}}"
+						>
+						<label 
+							for="menu-item-name" 
+							class="form-label"
+						>
+							<b>Name</b>
+							<b style="color:#FF0000";>*required</b>
+						</label>
+						<input 
+							id="name" 
+							type="text" 
+							class="form-control" 
+							value="{{td.name}}" 
+							placeholder="{{td.name}}"
+							required
+						>
+						<label 
+							for="menu-item-description" 
+							class="form-label"
+						>
+							<b>Price</b>
+							<b style="color:#FF0000";>*required</b>
+						</label>
+						<input 
+							id="price" 
+							type="text" 
+							class="form-control" 
+							value="{{td.price}}" 
+							placeholder="{{td.price}}"
+							require
+						>
+						<input 
+							type="hidden" 
+							name="topping-desert-id" 
+							value="{{td.id}}"
+						/>
+						<br><br>
+					</div>	
+					<div class="d-flex justify-content-evenly">
+            <button 
+							type="submit" 
+							class="btn btn-primary"
+						>
+							Update
+						</button>
+            <button 
+              class="btn btn-warning view-menu-button" onclick="history.back()"
+            >
+              Cancel
+            </button>
+            <button 
+							class="btn btn-danger"
+							id="deleteButton" 
+							data-id="{{td.id}}"
+						>
+							Delete
+						</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	
+</div>
+
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+
+<script src="/js/updateToppingDesert.js"></script>

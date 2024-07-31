@@ -1,0 +1,480 @@
+<head>
+  <link rel="stylesheet" href="/css/updateInformation.css">
+</head>
+
+<div class="information-background">
+  <div class="container-information-header">
+    <center>
+      <h1>Update {{x.name}}</h1>
+      <h4>For admin only</h4>
+    </center>
+  </div>
+  <div class="container-update-item">
+    <div class="container-fluid item">
+      <form class="" id="updateHomePage">
+        <div class="container py-3">
+          <h2 class="py-3">Update ({{x.name}})</h2>
+          <div class="forms">
+            <!--#region name  -->
+            <h4>{{x.name}}</h4>
+            <label 
+              for="name" 
+              class="form-label"
+            >
+              <b>Name</b> 
+              <b style="color:#FF0000";>*required</b> 
+            </label>
+            <input 
+              id="name" 
+              type="text" 
+              class="form-control" 
+              value="{{x.name}}" 
+              placeholder="{{x.name}}" required
+            >
+            <!--#endregion -->
+            
+            <br><br>
+            <!--#region name1  -->
+            <h4>{{x.name1}}</h4>
+            <label>
+              <b style="color:#FF0000";>Please select to switch on!</b>
+            </label>  
+            <br>
+            <input 
+              type="checkbox"
+              id="name1Switch" 
+              value="{{x.name1Switch}}" 
+            >
+            <label>
+              <span class="slider"></span>
+              <b>Name 1 Switch</b>
+            </label>
+            <br><br>
+            <label 
+              for="name1" 
+              class="form-label"
+            >
+              <b>Name 1</b>  
+            </label>
+            <input 
+              id="name1" 
+              type="text" 
+              class="form-control" 
+              value="{{x.name1}}" 
+              placeholder="{{x.name1}}" required
+            >
+            <label 
+              for="description1" 
+              class="form-label"
+            >
+              <b>Description 1</b>
+            </label>
+            <input 
+              id="description1" 
+              type="text" 
+              class="form-control" 
+              value="{{x.description1}}" 
+              placeholder="{{x.description}}" required
+            >
+            <!--#endregion -->
+            <br><br>
+            <!--#region name2  -->
+            <h4>{{x.name2}}</h4>
+            <label>
+              <b style="color:#FF0000";>Please select to switch on!</b>
+            </label>
+            <br>
+            <input 
+              type="checkbox"
+              id="name2Switch" 
+              value="{{x.name2Switch}}"
+            >
+            <label>
+              <span class="slider"></span>
+              <b>Name 2 Switch</b>
+            </label>
+            <br><br>
+            <label 
+              for="name2"
+              class="form-label"
+            >
+              <b>Name 2</b>
+            </label>
+            <input 
+              id="name2"
+              type="text"
+              class="form-control"
+              value="{{x.name2}}"
+              placeholder="{{x.nanme2}}" required
+            >
+            <label 
+              for="description2"
+              class="form-label"
+            >
+              <b>Description 2</b>
+            </label>
+            <input 
+              id="description2"
+              type="text"
+              class="form-control"
+              value="{{x.description2}}"
+              placeholder="{{x.description2}}" required
+            >
+            <!--#endregion -->
+            <br><br>
+            <!--#region name3_1  -->
+            <h4>{{x.name3_1}}</h4>
+            <label>
+              <b style="color:#FF0000";>Please select to switch on!</b>
+            </label>
+            <br>
+            <input 
+              type="checkbox"
+              id="name3_1Switch" 
+              value="{{x.name3_1Switch}}"
+            >
+            <label>
+              <span class="slider"></span>
+              <b>Name 3_1 Switch</b>
+            </label>
+            <br><br>
+            <label 
+              for="name3_1"
+              class="form-label"
+            >
+              <b>Name 3_1</b>
+            </label>
+            <input 
+              id="name3_1"
+              type="text"
+              class="form-control"
+              value="{{x.name3_1}}"
+              placeholder="{{x.name3_1}}" required
+            >
+            <label 
+              for="desription3_1"
+              class="form-label"
+            >
+              <b>Description 3_1</b> 
+            </label>
+            <input 
+              id="description3_1"
+              type="text"
+              class="form-control"
+              value="{{x.description3_1}}"
+              placeholder="{{x.description3_1}}" required
+            >
+            <!--#endregion -->
+            <br>
+            <!--#region name3_2  -->
+            <label>
+              <b style="color:#FF0000";>Please select to switch on!</b>
+            </label>
+            <br>
+            <input 
+              type="checkbox"
+              id="name3_2Switch" 
+              value="{{x.name3_2Switch}}"
+            >
+            <label>
+              <span class="slider"></span>
+              <b>Description 3_2 Switch</b>
+            </label>
+            <br><br>
+            <label 
+              for="desription3_2"
+              class="form-label"
+            >
+              <b>Description 3_2</b> 
+            </label>
+            <input 
+              id="description3_2"
+              type="text"
+              class="form-control"
+              value="{{x.description3_2}}"
+              placeholder="{{x.description3_2}}" required
+            >
+            <!--#endregion -->
+            <br><br>
+            <!--#region name4  -->
+            <h4>{{x.name4}}</h4>
+            <label>
+              <b style="color:#FF0000";>Please select to switch on!</b>
+            </label>
+            <br>
+            <input 
+              type="checkbox"
+              id="name4Switch" 
+              value="{{x.name4Switch}}"
+            >
+            <label>
+              <span class="slider"></span>
+              <b>Name 4 Switch</b>
+            </label>
+            <br><br>
+            <label 
+              for="name4"
+              class="form-label"
+            >
+              <b>Name 4</b>
+            </label>
+            <input 
+              id="name4"
+              type="text"
+              class="form-control"
+              value="{{x.name4}}"
+              placeholder="{{x.name4}}" required
+            >
+            <label 
+              for="desription4"
+              class="form-label"
+            >
+              <b>Description 4</b> 
+            </label>
+            <input 
+              id="description4"
+              type="text"
+              class="form-control"
+              value="{{x.description4}}"
+              placeholder="{{x.description4}}" required
+            >
+            <!--#endregion -->
+            <br><br>
+            <!--#region name5_1  -->
+            <h4>{{x.name5_1}}</h4>
+            <label>
+              <b style="color:#FF0000";>Please select to switch on!</b>
+            </label>
+            <br>
+            <input 
+              type="checkbox"
+              id="name5_1Switch" 
+              value="{{x.name5_1Switch}}"
+            >
+            <label>
+              <span class="slider"></span>
+              <b>Name 5_1 Switch</b>
+            </label>
+            <br><br>
+            <label 
+              for="name5_1"
+              class="form-label"
+            >
+              <b>Name 5_1</b>
+            </label>
+            <input 
+              id="name5_1"
+              type="text"
+              class="form-control"
+              value="{{x.name5_1}}"
+              placeholder="{{x.name5_1}}" required
+            >
+            <label 
+              for="desription5_1"
+              class="form-label"
+            >
+              <b>Description 5_1</b> 
+            </label>
+            <input 
+              id="description5_1"
+              type="text"
+              class="form-control"
+              value="{{x.description5_1}}"
+              placeholder="{{x.description5_1}}" required
+            >
+            <!--#endregion -->
+            <br>
+            <!--#region delivery options  -->
+            <label>
+              <b style="color:#FF0000";>Please select all that apply!</b>
+            </label>
+            <br>
+            <input 
+              type="checkbox"
+              id="slice_switch" 
+              value="{{x.slice_switch}}"
+            >
+            <label>
+              <span class="slider"></span>
+              <b>Slice Switch</b>
+            </label>
+            <br>
+            <input 
+              type="checkbox"
+              id="doordash_switch" 
+              value="{{x.doordash_switch}}"
+            >
+            <label>
+              <span class="slider"></span>
+              <b>Door Dash Switch</b>
+            </label>
+            <br>
+            <input 
+              type="checkbox"
+              id="ubereats_switch" 
+              value="{{x.ubereats_switch}}"
+            >
+            <label>
+              <span class="slider"></span>
+              <b>Uber Eats Switch</b>
+            </label>
+            <br>
+            <input 
+              type="checkbox"
+              id="grubhub_switch" 
+              value="{{x.grubhub_switch}}"
+            >
+            <label>
+              <span class="slider"></span>
+              <b>Grub Hub Switch</b>
+            </label>
+            <br>
+            <!--#endregion -->
+            <br>
+            <!--#region description5_2  -->
+            <label>
+              <b style="color:#FF0000";>Please select to switch on!</b>
+            </label> 
+            <br>
+            <input 
+              type="checkbox"
+              id="name5_2Switch" 
+              value="{{x.name5_2Switch}}"
+            >
+            <label>
+              <span class="slider"></span>
+              <b>Description 5_2 Switch</b>
+            </label>
+            <br><br>
+            <label 
+              for="desription5_2"
+              class="form-label"
+            >
+              <b>Description 5_2</b> 
+            </label>
+            <input 
+              id="description5_2"
+              type="text"
+              class="form-control"
+              value="{{x.description5_2}}"
+              placeholder="{{x.description5_2}}" required
+            >
+            <!--#endregion -->
+            <br>
+            <!--#region description5_3  -->
+            <label>
+              <b style="color:#FF0000";>Please select to switch on!</b>
+            </label>
+            <br>
+            <input 
+              type="checkbox"
+              id="name5_3Switch" 
+              value="{{x.name5_3Switch}}"
+            >
+            <label>
+              <span class="slider"></span>
+              <b>Description 5_3 Switch</b>
+            </label>
+            <br><br>
+            <label 
+              for="description5_3"
+              class="form-label"
+            >
+              <b>Description 5_3</b> 
+            </label>
+            <input 
+              id="description5_3"
+              type="text"
+              class="form-control"
+              value="{{x.description5_3}}"
+              placeholder="{{x.description5_3}}" required
+            >
+            <!--#endregion -->
+            <br>
+            <!--#region description5_4  -->   
+            <label>
+              <b style="color:#FF0000";>Please select to switch on!</b>
+            </label> 
+            <br>
+            <input 
+              type="checkbox"
+              id="name5_4Switch"
+              value="{{x.name5_4Switch}}" 
+            >
+            <label>
+              <span class="slider"></span>
+              <b>Description 5_4 Switch</b>
+            </label>
+            <br><br>
+            <label 
+              for="desription5_4"
+              class="form-label"
+            >
+              <b>Description 5_4</b> 
+            </label>
+            <input 
+              id="description5_4"
+              type="text"
+              class="form-control"
+              value="{{x.description5_4}}"
+              placeholder="{{x.description5_4}}" required
+            >
+            <!--#endregion -->
+            <br>
+            <!--#region description5_5  -->
+            <label>
+              <b style="color:#FF0000";>Please select to switch on!</b>
+            </label> 
+            <br>
+            <input 
+              type="checkbox"
+              id="name5_5Switch" 
+              value="{{x.name5_5Switch}}"
+            >
+            <label>
+              <span class="slider"></span>
+              <b>Description 5_5 Switch</b>
+            </label>
+            <br><br>
+            <label 
+              for="desription5_5"
+              class="form-label"
+            >
+              <b>Description 5_5</b> 
+            </label>
+            <input 
+              id="description5_5"
+              type="text"
+              class="form-control"
+              value="{{x.description5_5}}"
+              placeholder="{{x.description5_5}}" required
+            >
+            <!--#endregion -->
+          </div>
+
+          <!--#region buttons  -->
+          <div class="d-flex justify-content-evenly">
+            <input
+              type="hidden" name="home-id" value="{{x.id}}"
+            />
+            <button 
+              type="submit" class="btn btn-primary">Update
+            </button>
+            <div>
+              <a href="/" id="cancelButton" class="btn btn-warning">
+                Cancel
+              </a>
+            </div>
+            <button 
+              class="btn btn-danger" id="deleteButton" data-id="{{item.id}}">Delete
+            </button>
+          </div>
+          <!--#endregion -->
+
+        </div>
+      </form> 
+    </div>
+  </div>
+</div>
+
+<script src="/js/updateHomePage.js"></script>

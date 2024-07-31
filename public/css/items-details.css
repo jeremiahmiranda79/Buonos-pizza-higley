@@ -1,0 +1,24 @@
+.item-image img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+@media (max-width: 768px) {
+  .page-container {
+    margin-top: 100px;
+  }
+  
+  .item-image img {
+    width: 90%;
+  }
+
+  .item-background {
+    padding-top: 55px;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 100%;
+    padding-bottom: 20%;
+  } 
+}

@@ -1,0 +1,153 @@
+.gallery-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  min-height: 60vh;
+  background: #000;
+}
+
+.box {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  transform-style: preserve-3d;
+  animation: animate 22s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: perspective(900px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(900px) rotateY(360deg);
+  }
+}
+
+.box div {
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  transform: rotateY(calc(var(--v) * 45deg)) translateZ(300px);
+  -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+}
+
+.box div img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.box div h3 {
+  font-family: var(--buonos-font);
+  color: var(--buonos-red);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  position: absolute; 
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding-top: -1200px
+}
+
+.spin {
+  animation-name: spin;
+  animation-duration:  2s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes spin {
+  0% {
+    /* filter: hue-rotate(0deg); */
+    transform: perspective(900px) rotateY(0deg);
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+  }
+  100% {
+    /* filter: hue-rotate(360deg); */
+    transform: perspective(900px) rotateY(360deg);
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 40vh;
+    background: #000;
+  }
+
+  .box {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    transform-style: preserve-3d;
+    animation: animate 22s linear infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: perspective(450px) rotateY(0deg);
+    }
+    100% {
+      transform: perspective(450px) rotateY(360deg);
+    }
+  }
+  
+  .box div {
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    transform: rotateY(calc(var(--v) * 45deg)) translateZ(150px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+  }
+  
+  .box div img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .box div h3 {
+    font-family: var(--buonos-font);
+    color: var(--buonos-red);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    position: absolute; 
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: -1200px;
+    font-size: medium;
+  }
+  
+  .spin {
+    animation-name: spin;
+    animation-duration:  2s;
+    animation-timing-function: ease-out;
+  }
+  
+  @keyframes spin {
+    0% {
+      /* filter: hue-rotate(0deg); */
+      transform: perspective(450px) rotateY(0deg);
+      -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+    }
+    100% {
+      /* filter: hue-rotate(360deg); */
+      transform: perspective(450px) rotateY(360deg);
+      -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+    }
+  }
+}

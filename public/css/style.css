@@ -1,0 +1,222 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background: var(--background-1);
+}
+
+:root {
+  --navbar: #212529;
+  --buonos-red: #ce2b37;
+  --buonos-white: rgb(242, 242, 242);
+  --buonos-green: rgb(0, 146, 70);
+  --background-red: #f16770;
+  --background-green: rgb(125, 245, 183);
+  --background-1: rgb(169, 169, 169); 
+  --background-2: rgb(150, 146, 146);
+  --shadow: rgb(63, 61, 61);
+
+  --shadow-effect: 2px 2px 4px var(--shadow);
+
+  --stroke-1: -1px 0 #000000, 0 1px black, 1px 0 black, 0 -1px black;
+  
+  --buonos-font: 'Permanent Marker', cursive;
+}
+
+main {
+  /* margin-top: 60px;
+  margin-bottom: 82px; */
+  /* margin-top: 5px; */
+  /* margin-bottom: -5px; */
+} 
+
+/* @media (min-width: 768px) {
+  main {
+    margin-top: 100px;
+    margin-bottom: -10px;
+  }
+} */
+
+
+
+#buonos {
+  filter: grayscale(20%) blur(2px) brightness(60%);
+}
+
+/* .copy-right {
+  padding-bottom: 10px;
+  color: var(--buonos-white)
+} */
+
+.container-menu h1 {
+  font-family: var(--buonos-font);
+  color: var(--buonos-red);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 37.5px;
+}
+
+.category-image {
+  width: 95%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 2px 2px 4px var(--shadow);
+}
+
+.container-menu .list-group {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: 2px 2px 4px var(--shadow);
+}
+
+/* Update Category */
+.container-update-category-header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.container-update-category-header h1 {
+  font-family: var(--buonos-font);
+  color: var(--buonos-red);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 40px;
+}
+
+.container-update-category {
+  background: var(--buonos-white);
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 50px;
+  padding: 15px;
+  box-shadow: 2px 2px 4px var(--shadow);
+  border-radius: 4px;
+}
+
+.update-category-background {
+  height: 750px;
+}
+
+/* Create Category */
+.container-create-category-header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.container-create-category-header h1 {
+  font-family: var(--buonos-font);
+  color: var(--buonos-red);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 40px;
+}
+
+.container-create-category {
+  background: var(--buonos-white);
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 5px;
+  padding: 15px;
+  box-shadow: 2px 2px 4px var(--shadow);
+  border-radius: 4px;
+}
+
+.create-category-background {
+  height: 750px;
+}
+
+/* Create Item */
+.container-create-item-header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.container-create-item-header h1 {
+  font-family: var(--buonos-font);
+  color: var(--buonos-red);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 40px;
+}
+
+.container-create-item {
+  background: var(--buonos-white);
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 5px;
+  padding: 15px;
+  box-shadow: 2px 2px 4px var(--shadow);
+  border-radius: 4px;
+}
+
+.create-item-background {
+  height: 750px;
+}
+
+.category-dropdown-main {
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+.category-dropdown {
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+.category-dropdown select {
+  padding-bottom: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 3px;
+  border-radius: 5px;
+}
+
+/* Update Item */
+.container-update-item-header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.container-update-item-header h1 {
+  font-family: var(--buonos-font);
+  color: var(--buonos-red);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 40px;
+}
+
+.container-update-item {
+  background: var(--buonos-white);
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 5px;
+  padding: 15px;
+  box-shadow: 2px 2px 4px var(--shadow);
+  border-radius: 4px;
+}
+
+.update-item-background {
+  height: 750px;
+}
+
+
+
+
+.page {
+  margin-top: 80px;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+li {
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}

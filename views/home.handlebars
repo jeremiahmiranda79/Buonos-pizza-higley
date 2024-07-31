@@ -1,0 +1,508 @@
+<head>
+  {{!-- <link rel="stylesheet" href="/css/specialties.css"> --}}
+  <link rel="stylesheet" href="/css/loyalty.css">
+  <link rel="stylesheet" href="/css/delivery.css">
+  <link rel="stylesheet" href="/css/social.css">
+  <link rel="stylesheet" href="/css/rotating.css">
+  <link rel="stylesheet" href="/css/gallery-flip-animation.css">
+  <link rel="stylesheet" href="/css/new-animation.css">
+  <link rel="stylesheet" href="/css/style-page.css">
+  <link rel="stylesheet" href="/css/magic-card.css">
+  <link rel="stylesheet" href="/css/video-player.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <script src="https://hammerjs.github.io/dist/hammer.js"></script>
+</head>
+
+{{!-- <section label="admin buttons">
+  {{#if loggedIn}}
+    <center>
+      <br><br>
+      {{#each homePage as |hp|}}
+        <a href="/home/update/{{hp.id}}" class="active btn btn-primary">Update {{hp.name}}</a>
+      {{/each}}        
+    </center>
+    <center>
+      {{#each information as |i|}}
+        <a href="/information/update/{{i.id}}" class="active btn btn-primary">Update {{i.name}}</a>
+      {{/each}}
+    </center>
+  {{/if}}
+</section> --}}
+
+<br>
+
+{{!-- <div id="myElement"></div> --}}
+
+
+<div class="heading buonos-font">
+  <center>
+    <h2>Welcome to Buono's Pizza Higley</h2>
+  </center>
+</div>
+
+<section label="information"> 
+  {{#each information as |i|}}
+    {{#if i.information1_switch}}
+      <center>
+        <h4 style="color: black;">{{i.company}}</h4>
+
+        <a href={{i.map}} style="text-decoration:none; color:black;">
+          <h4>{{i.address}}</h4>
+        </a>
+
+        <a href={{i.telNumber}} style="text-decoration:none; color:black;">
+          <h4>{{i.phoneNumber}}</h4>
+        </a>
+
+        <a href="mailto: buonosgilbert@yahoo.com" style="text-decoration: none; color:black;">
+          <h4>{{i.email}}</h4>
+        </a>
+
+        <h6 style="color: black;">{{i.style}}</h6>
+
+      </center> 
+    {{/if}}
+  {{/each}} 
+</section>
+
+<br>
+
+<div class="video-player">
+  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/yaQVJVlKhPQ?si=V13N0b1yJtQaKEo9&amp;controls=0&autoplay=1&mute=1&loop=1&playlist=yaQVJVlKhPQ" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<div class="sub-section buonos-font">
+  {{#each homePage as |hp|}}
+    {{#if hp.name1Switch}}
+      <h2>{{hp.name1}}</h2>
+      <h5>{{hp.description1}}</h5>
+    {{/if}}
+  {{/each}}
+</div>
+
+<br>
+
+<center>
+  <a href="/menu-1" class="active btn btn-primary" style="background-color: var(--buonos-red)">View our full menu here!</a>
+</center>
+
+<br>
+
+{{!-- <div class="animation-container" ontouchmove="myFunction(event)"> --}}
+{{!-- <div class="animation-container" ontouchstart="handleTouchMove(event)" ontouchmove="handleTouchMove(event)"> --}}
+  <div class="animation-container" id="myElement">
+  <div class="wrapper">
+    <input type="radio" name="slide" id="one" checked>
+    <input type="radio" name="slide" id="two">
+    <input type="radio" name="slide" id="three">
+    <input type="radio" name="slide" id="four">
+    <input type="radio" name="slide" id="five">
+
+    <div class="img img-1">
+      <img src="/images/home-buonos-place-2.jpg" alt="">
+      <div class="centered"><h1>Buonos Pizza</h1></div>
+    </div>
+
+    <div class="img img-2">
+      <img src="/images/home-pizza-dough.jpg" alt="">
+      <div class="centered"><h1>Made in House</h1></div>
+    </div>
+
+    <div class="img img-3">
+      <img src="/images/home-legend-2.jpg" alt="">
+      <div class="centered"><h1>Experienced Chefs</h1></div>
+    </div>
+
+    <div class="img img-4">
+      <img src="/images/new-york-style.jpg" alt="">
+      <div class="centered"><h1>New York Style</h1></div>
+    </div>
+
+    <div class="img img-5">
+      <img src="/images/buonos-old-3.jpg" alt="">
+      <div class="centered"><h1>Quality Since 1989</h1></div>
+    </div>
+
+    <div class="animation-sliders">
+      <label for="one" class="one"></label>
+      <label for="two" class="two"></label>
+      <label for="three" class="three"></label>
+      <label for="four" class="four"></label>
+      <label for="five" class="five"></label>
+    </div>
+  </div>
+</div>
+
+<br>
+
+{{!-- <p id="demo"></p> --}}
+    
+<div class="sub-section buonos-font">
+  <section label="specialties">
+    {{#each homePage as |hp|}}
+      {{#if hp.name2Switch}}
+        <div class="container-fluid specialties">     
+          <h2>{{hp.name2}}</h2>
+          <h5>{{hp.description2}}</h5>
+        </div>
+      {{/if}}
+    {{/each}}
+  </section>
+</div>
+
+<br>
+
+<center>
+  <a href="/specials" class="active btn btn-primary" style="background-color: var(--buonos-red)">View our catering options here!</a>
+</center>
+
+<br>
+
+<div class="gallery-container">
+  <div class="box">
+    <div style="--v: 1;">
+      <img src="/images/calzone-2.jpg">
+      <h3>Calzone</h3>
+    </div>
+
+    <div style="--v: 2;">
+      <img src="/images/pizza-specialty-margherita-pizza-2.jpg">
+      <h3>Pizza</h3>
+    </div>
+
+    <div style="--v: 3;">
+      <img src="/images/salad-antipasto-2.jpg">
+      <h3>Salad</h3>
+    </div>
+
+    <div style="--v: 4;">
+      <img src="images/dessert-lemoncello-2.jpg">
+      <h3>Dessert</h3>
+    </div>
+
+    <div style="--v: 5;">
+      <img src="images/stromboli-2.jpg">
+      <h3>Stromboli</h3>
+    </div>
+
+    <div style="--v: 6;">
+      <img src="images/app-wings-2.jpg">
+      <h3>Wings</h3>
+    </div>
+
+    <div style="--v: 7;">
+      <img src="images/hot-sub-philly-steak-2.jpg">
+      <h3>Subs</h3>
+    </div>
+
+    <div style="--v: 8;">
+      <img src="images/pizza-regular-sicilian-2.jpg">
+      <h3>Sicilian</h3>
+    </div>
+  </div>
+</div>
+
+<br>
+
+{{!-- <center>
+  <a href="/specials" class="active btn btn-primary" style="background-color: var(--buonos-red)">View our catering options here!</a>
+</center> --}}
+
+{{!-- <br> --}}
+
+<div class="sub-section buonos-font">
+  <section label="loyalty">
+    {{#each homePage as |hp|}}
+      {{#if hp.name3_1Switch}}
+        <h2>{{hp.name3_1}}</h2>
+        <h5>{{hp.description3_1}}</h5>
+        {{#if hp.name3_2Switch}}
+          <h6>*Avaliable only through Dine in or in person Take out orders.*</h6>
+        {{/if}}
+      {{/if}}
+    {{/each}}
+  </section>
+</div>
+
+<br>
+  
+<section label="Loyalty Card">
+  <div class="body">
+    <div class="magic-card-container">
+      <div class="magic-card-1">
+        <div class="magic-card-item"></div>
+        <center>
+          <h4>See our loyalty program!</h4>
+        </center>
+      </div> 
+
+      <div class="magic-card-2">
+        <div class="magic-card-item"></div>
+        <center>
+          <h4>See our loyalty program!</h4>
+        </center>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sub-section buonos-font">
+  <section label="takeout-dinein">
+    {{#each homePage as |hp|}}
+      {{#if hp.name4Switch}}
+        <h2>{{hp.name4}}</h1>
+        <h5>{{hp.description4}}</h5>
+      {{/if}}
+    {{/each}}
+  </section>
+</div>
+
+<br>
+
+<center>
+  <a href="/menu-1" class="active btn btn-primary" style="background-color: var(--buonos-red)">View our full menu here!</a>
+</center>
+
+<br>
+
+<div class="sub-section buonos-font">
+  <section label="delivery">
+    {{#each homePage as |hp|}}
+      {{#if hp.name5_1Switch}}
+        <h2>{{hp.name5_1}}</h2>
+        <h4>{{hp.description5_1}}</h4>
+        <h5>Please click your favorite online ordering app. Our favorite is Slice!</h5>
+          {{#if hp.slice_switch}}
+            <a href="https://slicelife.com/restaurants/az/gilbert/85295/buonos-pizza/menu?utm_campaign=order_now_button&utm_medium=referral&utm_source=buonosgilbert.com">
+              <img src="/images/slice-logo-600x200.jpg" class="btn-delivery-main"></img>
+            </a>
+          {{/if}}
+
+          <ul class="nav flex-row delivery">
+            {{#if hp.doordash_switch}}
+              <a href="https://www.doordash.com/store/buonos-pizza-gilbert-gilbert-1778796/">
+                <img src="/images/delivery-doordash-3.jpg" class="btn-delivery"></img>
+              </a>
+            {{/if}}
+
+            {{#if hp.ubereats_switch}}
+              <a href="https://www.ubereats.com/store/buonos-pizza-gilbert/gJH4x-XFTACHDY7vQuqWWg">
+                <img src="/images/delivery-uber-eats.jpg" class="btn-delivery"></img>
+              </a>
+            {{/if}}
+
+            {{#if hp.grubhub_switch}}
+              <a href="https://www.grubhub.com/restaurant/buonos-pizza-gilbert-1464-e-williams-field-rd-gilbert/2776436">
+                <img src="/images/delivery-grubhub.jpg" class="btn-delivery"></img>
+              </a>
+            {{/if}}
+          </ul>
+
+      {{/if}}
+
+      {{#if name5_2Switch}}
+        <p>{{description5_2}}</p>
+      {{/if}}
+
+      {{#if name5_3Switch}}
+        <h4>{{description5_3}}</h4>
+      {{/if}}
+
+      {{#if hp.name5_4Switch}}
+        <p>{{hp.description5_4}}</p> 
+      {{/if}}
+
+      {{#if hp.name5_5Switch}}
+        <p>{{hp.description5_5}}</p>
+      {{/if}}
+
+    {{/each}}
+  </section>
+</div>
+
+<div class="social-footer">
+  {{#each information as |i|}}
+    <h5>{{i.description}}</h5>
+  {{/each}}
+
+  {{#each information as |i|}}
+    <h4>{{i.company}}</h4>
+  {{/each}}
+
+    {{#each information as |i|}}
+      <a href={{i.map}}>
+        <h4 style="text-decoration:none; color:black;">{{i.address}}</h4>
+      </a>
+    {{/each}}
+
+  <a href="tel:+14808991200">
+    {{#each information as |i|}}
+      <h4 style="text-decoration:none; color:black;">{{i.phoneNumber}}</h4>
+    {{/each}}
+  </a>
+
+  <a href="mailto: buonosgilbert@yahoo.com">
+    {{#each information as |i|}}
+      <h4 style="text-decoration:none; color:black;">{{i.email}}</h4> 
+    {{/each}}
+  </a>
+
+  <div class="row">
+    {{!-- <div class="column">
+      <a href="https://www.facebook.com/people/Buonos-PIZZA-Gilbert/100067421335508/?mibextid=ZbWKwL" class="button-social">
+        <i class="fa-brands fa-square-facebook" style="text-decoration:none; color:black; font-size:30px;"></i>
+      </a>
+    </div> --}}
+
+    <div class="column">
+      <a href="https://www.instagram.com/buonospizzahigley/?hl=en"  class="button-social">
+        <i class="fa-brands fa-instagram" style="text-decoration:none; color:black; font-size:30px;"></i>
+      </a>
+    </div>
+
+    {{!-- <div class="column">
+      <a href="https://www.yelp.com/biz/buono-s-pizza-gilbert"  class="button-social">
+        <i class="fa-brands fa-yelp" style="text-decoration:none; color:black; font-size:30px;"></i>
+      </a>
+    </div> --}}
+
+    <div class="column">
+      {{!-- <a href="https://www.google.com/maps/dir//1464+E+Williams+Field+Rd,+Gilbert,+AZ+85295/@33.3074096,-111.8409328,12z/data=!4m6!4m5!1m0!1m2!1m1!1s0x872bac74ffc357e1:0xed805996e92f4bc4!3e0"  class="button-social">
+        <i class="fa-brands fa-google" style="text-decoration:none; color:black; font-size:30px;"></i>
+      </a> --}}
+      {{#each information as |i|}}
+      <a href={{i.map}}>
+        <i class="fa-brands fa-google" style="text-decoration:none; color:black; font-size:30px;"></i>
+      </a>
+    {{/each}}
+    </div>
+  </div>
+
+  <p>
+    COPYRIGHT &copy; 2024 BUONO'S GILBERT - ALL RIGHTS RESERVED. SORRY NO CHECKS. GROUPS OF 8 OR MORE 15% GRATUITY Will BE INCLUDED. ALL PRICES SUBJECT TO CHANGE WITHOUT NOTICE.
+  </p> 
+
+  <h5>🤓Powered by: SmileyFaceStudios()🤓</h5>
+</div>
+
+<script>
+  $(document).ready(function() {
+    $('.box div').click(function() {
+      if($(this).hasClass('spin')) {
+        $('.box div').removeClass('spin');
+      }
+      else {
+         $('.box div').removeClass('spin');
+         $(this).addClass('spin');
+      }
+    });
+  });
+</script>
+
+<script type="text/javascript" src="/js/vanilla-tilt.js"></script>
+
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".magic-card-1"), {
+		max: 20,
+		speed: 1000,
+    glare: true,
+    "max-glare": 1
+	});
+
+	//It also supports NodeList
+	//VanillaTilt.init(document.querySelectorAll(".your-element"));
+  VanillaTilt.init(document.querySelector(".magic-card-2"), {
+		max: 20,
+		speed: 1000,
+    glare: true,
+    "max-glare": 1
+	});
+</script>
+
+{{!-- <script src="/js/swiper.js"></script> --}}
+<script>
+  const radioButton1 = document.getElementById('one');
+  const radioButton2 = document.getElementById('two');
+  const radioButton3 = document.getElementById('three');
+  const radioButton4 = document.getElementById('four');
+  const radioButton5 = document.getElementById('five');
+  const buttons = [radioButton1, radioButton2, radioButton3, radioButton4, radioButton5];
+  let index = 2;
+
+  buttons.forEach(setFalse);
+  setFirst();
+
+  function setFalse() {
+    buttons.checked = false;
+  }
+
+  function setFirst() {
+    buttons[index].checked  = true;
+    buttons[index].click();
+  }
+
+  function setIndex(index) {
+    buttons[index].checked  = true;
+    buttons[index].click();
+  }
+
+  var myElement = document.getElementById('myElement');
+  var mc = new Hammer(myElement);
+  var isSwipe = false;
+
+  checkSwipe();
+
+  function checkSwipe() {
+    mc.on("panleft tap press", function(ev) {
+      if (!isSwipe) {
+        isSwipe = true;
+
+        if (index != 0) {
+          index--;
+          setIndex(index);
+          console.log(index);
+          setTimeout(function() {
+            timer();
+          }, 1000);
+        }
+        else {
+          index = 4;
+          setIndex(index);
+          console.log(index);
+          setTimeout(function() {
+            timer();
+          }, 1000);
+        }
+      }
+    });
+
+    mc.on("panright tap press", function(ev) {
+      if (!isSwipe) {
+        isSwipe = true;
+
+        if (index != 4) {
+          index++;
+          setIndex(index);
+          console.log(index);
+          setTimeout(function() {
+            timer();
+          }, 1000);
+        }
+        else {
+          index = 0;
+          setIndex(index);
+          console.log(index);
+          setTimeout(function() {
+            timer();
+          }, 1000);
+        }
+      }   
+    });
+  }
+
+  function timer() {
+    isSwipe = false;
+  }
+
+</script>

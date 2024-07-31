@@ -1,0 +1,32 @@
+[
+  { 
+    "name": "Hot Sauce",
+    "price3oz": 0.75,
+    "price16oz": 3.50
+  },
+  { 
+    "name": "Medium Sauce",
+    "price3oz": 0.75,
+    "price16oz": 3.50
+  },
+  {  
+    "name": "Mild Sauce",
+    "price3oz": 0.75,
+    "price16oz": 3.50
+  },
+  { 
+    "name": "Honey Hot",
+    "price3oz": 0.75,
+    "price16oz": 3.50
+  },
+  { 
+    "name": "BBQ",
+    "price3oz": 0.75,
+    "price16oz": 3.50
+  },
+  { 
+    "name": "Honey BBQ",
+    "price3oz": 0.75,
+    "price16oz": 3.50
+  }
+]

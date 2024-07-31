@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Home Page",
+
+    "name1": "Our Promise",
+    "description1": "Our classic pizza's are so fresh, we have to slap them!",
+    "name1Switch": true,
+
+    "name2": "Buonos Specialties",
+    "description2": "We refuse to compromise. We use the freshest and finest ingredients. Our pizza dough, pizza sauce, and pasta sauce are made fresh daily in house.",
+    "name2Switch": true,
+
+    "name3_1": "Loyalty Bonus",
+    "description3_1": "With any purchase of a large, or extra-large pizza pie, you will receive a magnet. Collect 8 and get a large 1 topping pizza pie for FREE!",
+    "name3_1Switch": true,
+
+    "description3_2": "Avaliable only through Dine in or in person Take out orders.",
+    "name3_2Switch": true,
+
+    "name4": "Take Out Or Dine In",
+    "description4": "Come see us in person! To take full advantage of our quality the best option is to dine in, or reserve an in store pick up order. We love our customers so feel free to visit during our normal business hours.",
+    "name4Switch": true,
+
+    "name5_1": "Delivery Service thru 3rd party",
+    "description5_1": "We use 3rd party online ordering & delivery services.",
+    "name5_1Switch": true,
+
+
+
+    "description5_2": "PLEASE NOTE: Buono's cannot guarantee the warmth or quality of food delivered by any of the 3rd party delivery services. We make ALL our food to order and have no control over time of pick up or delivery quality. We make every effort to ensure we provide the best quality food.",
+    "name5_2Switch": true,
+
+    "description5_3": "To ensure your food is top notch we encourage our customers to dine in or do direct pick up.",
+    "name5_3Switch": true,
+
+    "description5_4": "THANK YOU KINDLY FOR YOUR UNDERSTANDING!",
+    "name5_4Switch": true,
+
+    "description5_5": "BUONO'S MANAGEMENT",
+    "name5_5Switch": true,
+
+    "slice_switch": true,
+    "doordash_switch": true,
+    "ubereats_switch": true,
+    "grubhub_switch": true
+  }
+]

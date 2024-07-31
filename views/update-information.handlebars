@@ -1,0 +1,198 @@
+<head>
+  <link rel="stylesheet" href="/css/updateInformation.css">
+</head>
+
+<div class="information-background">
+  <div class="container-information-header">
+    <center>
+      <h1>Update {{info.name}}</h1>
+      <h4>For admin only</h4>
+    </center>
+  </div>
+
+  <div class="container-update-item">
+    <div class="container-fluid item">
+      <form class="" id="updateInformation">
+        <div class="container py-3">
+          <h2 class="py-3">Update ({{info.name}})</h2>
+
+          <div class="">
+            <label 
+              for="name" 
+              class="form-label"
+            >
+              <b>Name</b> 
+              <b style="color:#FF0000";>*required</b> 
+            </label>
+            <input 
+              id="name" 
+              type="text" 
+              class="form-control" 
+              value="{{info.name}}" 
+              placeholder="{{info.name}}" 
+              required
+            >
+            <br>
+            <label>
+              <b style="color:#FF0000";>Please select to switch on!</b>
+            </label> 
+            <br>
+            <input 
+              type="checkbox"
+              id="information1_switch" 
+              value="{{info.information1_switch}}"
+            >
+
+            <label>
+              <span class="slider"></span>
+              <b>Information 1 Switch</b>
+            </label>
+            <br><br>
+            <label 
+              for="company-name" 
+              class="form-label"
+            >
+              <b>LLC Name</b>  
+            </label>
+            <input 
+              id="company" 
+              type="text" 
+              class="form-control" 
+              value="{{info.company}}" 
+              placeholder="{{info.company}}" 
+              {{!-- required --}}
+            >
+
+            <label 
+              for="phone-number" 
+              class="form-label"
+            >
+              <b>Phone Number</b>
+              <b style="color:#FF0000";>*required</b>
+            </label>
+            <input 
+              id="phoneNumber" 
+              type="text" 
+              class="form-control" 
+              value="{{info.phoneNumber}}" 
+              placeholder="{{info.phoneNumber}}" required
+            >
+
+            <label 
+              for="tel-number" 
+              class="form-label"
+            >
+              <b>Tel Number</b>
+              <b style="color:#FF0000";>*required</b>
+            </label>
+            <input 
+              id="telNumber" 
+              type="text" 
+              class="form-control" 
+              value="{{info.telNumber}}" 
+              placeholder="{{info.telNumber}}" 
+              required
+            >
+
+            <label 
+              for="address"
+              class="form-label"
+            >
+              <b>Address</b>
+              <b style="color:#FF0000";>*required</b>
+            </label>
+            <input 
+              id="address"
+              type="text"
+              class="form-control"
+              value="{{info.address}}"
+              placeholder="{{info.address}}" 
+              required
+            >
+
+            <label 
+              for="map"
+              class="form-label"
+            >
+              <b>Map</b>
+            </label>
+            <input 
+              id="map"
+              type="text"
+              class="form-control"
+              value="{{info.map}}"
+              placeholder="{{info.map}}" 
+              {{!-- required --}}
+            >
+
+            <label 
+              for="email"
+              class="form-label"
+            >
+              <b>Email</b>
+              <b style="color:#FF0000";>*required</b>
+            </label>
+            <input 
+              id="email"
+              type="text"
+              class="form-control"
+              value="{{info.email}}"
+              placeholder="{{info.email}}" 
+              required
+            >
+
+            <label 
+              for="style"
+              class="form-label"
+            >
+              <b>Style</b>
+            </label>
+            <input 
+              id="style"
+              type="text"
+              class="form-control"
+              value="{{info.style}}"
+              placeholder="{{info.style}}" 
+              {{!-- required --}}
+            >
+            <label 
+              for="desription"
+              class="form-label"
+            >
+              <b>Description</b> 
+            </label>
+            <input 
+              id="description"
+              type="text"
+              class="form-control"
+              value="{{info.description}}"
+              placeholder="{{info.description}}"
+              {{!-- required --}}
+            >
+          </div>
+
+          <div class="d-flex justify-content-evenly">
+            <input
+              type="hidden" name="info-id" value="{{info.id}}"
+            />
+            <button 
+              type="submit" class="btn btn-primary">Update
+            </button>
+
+            <div>
+              <a href="/" id="cancelButton" class="btn btn-warning">
+                Cancel
+              </a>
+            </div>
+
+            <button 
+              class="btn btn-danger" id="deleteButton" data-id="{{item.id}}">Delete
+            </button>
+          </div>
+        </div>
+      </form> 
+    </div>
+  </div>
+</div>
+
+<script src="/js/updateInformation.js"></script>

@@ -1,0 +1,13 @@
+[
+  { 
+    "name": "Spaghetti",
+    "price5oz": 4.99,
+    "price9oz": 8.99
+  },
+  
+  {
+    "name": "Penne",
+    "price5oz": 4.99,
+    "price9oz": 8.99
+  }
+]
