@@ -22,10 +22,10 @@
     "name4Switch": true,
 
     "name5_1": "Delivery Service thru 3rd party",
-    "description5_1": "We use 3rd party online ordering & delivery services.",
+    "description5_1": "We use 3rd party delivery services.",
     "name5_1Switch": true,
 
-
+    "name5_2": "Please click your favorite delivery app. Our favorite is Slice!",
 
     "description5_2": "PLEASE NOTE: Buono's cannot guarantee the warmth or quality of food delivered by any of the 3rd party delivery services. We make ALL our food to order and have no control over time of pick up or delivery quality. We make every effort to ensure we provide the best quality food.",
     "name5_2Switch": true,
@@ -40,8 +40,19 @@
     "name5_5Switch": true,
 
     "slice_switch": true,
+    "slice_link": "#",
+    "slice_img": "/images/slice-logo-600x200.jpg",
+
     "doordash_switch": true,
+    "doordash_link": "#",
+    "doordash_img": "/images/delivery-doordash-3.jpg",
+
     "ubereats_switch": true,
-    "grubhub_switch": true
+    "ubereats_link": "#",
+    "ubereats_img": "/images/delivery-uber-eats.jpg",
+    
+    "grubhub_switch": true,
+    "grubhub_link": "#",
+    "grubhub_img": "/images/delivery-grubhub.jpg"
   }
 ]

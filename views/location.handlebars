@@ -18,17 +18,8 @@
   <section label="google-maps">
     {{#each location as |l|}}
       {{#if l.nameSwitch}}
-        {{!-- <div class="container-location-header">
-          <center>
-            <h1>{{l.name1}}</h1>
-          </center>
-        </div> --}}
         <div class="container-location">
           <div id="googleMap" style="width:100%;height:400px;"></div>
-          {{!-- <a href="https://www.google.com/maps/dir//1464+E+Williams+Field+Rd,+Gilbert,+AZ+85295/@33.3074096,-111.8409328,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x872bac74ffc357e1:0xed805996e92f4bc4!2m2!1d-111.7585316!2d33.3074368?entry=ttu" style="text-decoration:none;
-          ">
-            <img src="/images/map1.jpg" alt="" style="width:100%;">
-          </a> --}}
         </div>
         
       {{/if}}
@@ -86,16 +77,7 @@
       </a>
     </div>
 
-    {{!-- <div class="column">
-      <a href="https://www.yelp.com/biz/buono-s-pizza-gilbert"  class="button-social">
-        <i class="fa-brands fa-yelp" style="text-decoration:none; color:black; font-size:30px;"></i>
-      </a>
-    </div> --}}
-
     <div class="column">
-      {{!-- <a href="https://www.google.com/maps/dir//1464+E+Williams+Field+Rd,+Gilbert,+AZ+85295/@33.3074096,-111.8409328,12z/data=!4m6!4m5!1m0!1m2!1m1!1s0x872bac74ffc357e1:0xed805996e92f4bc4!3e0"  class="button-social">
-        <i class="fa-brands fa-google" style="text-decoration:none; color:black; font-size:30px;"></i>
-      </a> --}}
       {{#each information as |i|}}
       <a href={{i.map}}>
         <i class="fa-brands fa-google" style="text-decoration:none; color:black; font-size:30px;"></i>
@@ -117,10 +99,7 @@
   function myMap() {
     var mapProp= {
       center: new google.maps.LatLng(33.3803097 ,-111.7242338),
-      //zoom: 22,
       zoom: 19,
-      //mapTypeId: settings.mapTypeId||google.maps.MapTypeId.SATELLITE
-      //mapTypeId: 'satellite',
     };
 
     var map = new google.maps.Map(document.getElementById("googleMap"),   mapProp);

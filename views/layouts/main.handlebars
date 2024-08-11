@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-
   <html lang="en">
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>🍕Buonos Pizza🍕</title>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-      {{!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> --}}
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <script src="https://kit.fontawesome.com/c249425591.js" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="/css/style.css">
-      {{!-- <link rel="stylesheet" href="/css/header.css"> --}}
       <link rel="stylesheet" href="/css/footer.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,134 +16,31 @@
     </head>
 
     <body>
-      {{!-- <header>
-        <div class="navbar-top hidden-top">
-          <center>
-            <a href="/"><img src="/images/buonos-logo1.jpg" class="logo" alt="buonos-logo"></a>
-          <center>
-
-          <ul class="navbar-nav me-auto">
-            <li>
-              <a href="/"><img src="/images/buonos-logo1.jpg" class="logo2" alt="buonos-logo"></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/menu">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/cateringmenu">Catering</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/location">Location</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/hours">Hours</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contact">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/about">About</a>
-            </li>
-
-            <!--#region LOGGED IN  -->
-              {{#if loggedIn}}
-                <button id="employeelogout">
-                  Logout | {{name}}
-                </button>
-              {{else}}
-                <li class="nav-item">
-                  <a href="/employee/login" class="nav-link">Login</a>
-                </li>
-              {{/if}}
-            <!--#endregion -->
-          </ul>  
-        </div>
-      </header> --}}
-
-      {{!-- <div class="header" id="picture"> --}}
-        {{!-- <h2>Scroll Down</h2>
-        <p>Scroll down to see the sticky effect.</p> --}}
-        {{!-- <img src="/images/header-3.jpg" alt=""> --}}
-      {{!-- </div> --}}
-
       <nav id="navbar">
         <input type="checkbox" id="sidebar-active">
         <a class="home-link-1" href="/"><img src="/images/buonos-logo-5.jpg" alt=""></a>
-
-      <label for="sidebar-active" class="open-sidebar-button">
-        {{!-- <a class="home-link-1" href="/"><img src="/images/buonos-logo1.jpg" alt=""></a> --}}
-        <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-      </label>
-      <label id="overlay" for="sidebar-active"></label>
-      <div class="links-container" id="top">
-        
-
-        <label for="sidebar-active" class="close-sidebar-button">
-          <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        <label for="sidebar-active" class="open-sidebar-button">
+          <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
         </label>
+        <label id="overlay" for="sidebar-active"></label>
 
-        {{!-- <a class="home-link-2" href="/"><img src="/images/buonos-logo1.jpg" alt=""></a>  --}}
-        <a class="home-link" href="/"><img src="/images/buonos-logo-5.jpg" alt=""></a> 
-  
-        <a href="/">Home</a> 
-        <a href="/menu-1">Menu</a> 
-        <a href="/specials">Catering</a>
-        <a href="/order-online">Order-Online</a>
-        <a href="/location">Location</a>
-        <a href="/hours">Hours</a>
-        <a href="/contact-us">Contact</a>
-        <a href="/about">About</a>
-
-        <a href="/trivia-home-page">Trivia</a>
-
-        <a class="login-link" href="/employee/login">Login</a>
-        
-      </div>
-
-        
-        {{!-- <ul class="side-bar">
-          <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Catering</a></li>
-          <li><a href="#">Location</a></li>
-          <li><a href="#">Hours</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-
-        <ul>
-          <li><a href="#">Logo</a></li>
-          <li class="hideon-mobile"><a href="#">Menu</a></li>
-          <li class="hideon-mobile"><a href="#">Catering</a></li>
-          <li class="hideon-mobile"><a href="#">Location</a></li>
-          <li class="hideon-mobile"><a href="#">Hours</a></li>
-          <li class="hideon-mobile"><a href="#">Contact</a></li>
-          <li class="hideon-mobile"><a href="#">About</a></li>
-          <li class="menu-button" showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-        </ul> --}}
+        <div class="links-container" id="top">
+          <label for="sidebar-active" class="close-sidebar-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+          </label>
+          <a class="home-link" href="/"><img src="/images/buonos-logo-5.jpg" alt=""></a> 
+          <a href="/">Home</a> 
+          <a href="/menu-1">Menu</a> 
+          <a href="/specials">Catering</a>
+          <a href="/order-online">Delivery</a>
+          <a href="/location">Location</a>
+          <a href="/hours">Hours</a>
+          <a href="/contact-us">Contact</a>
+          <a href="/about">About</a>
+          <a href="/trivia-home-page">Trivia</a>
+          <a class="login-link" href="/employee/login">Login</a>
+        </div>   
       </nav>
-
-      <!--#region scollable tabs 2 -->
-    {{!-- <div class="main-container id="scroll-bar"" >
-      <div class="tab-nav-bar">
-        <div class="tab-navigation">
-          <i class="uil uil-angle-left left-btn"></i> 
-          <i class="uil uil-angle-right right-btn"></i>
-          <ul class="tab-menu">
-            <li class="tab-btn"><a href="#" class="active">All</a></li>
-            {{#each items as |c|}}
-              {{#if c.switchy}}
-                <li class="tab-btn"><a href="#{{c.id}}">{{c.name}}</a></li>
-              {{/if}}
-            {{/each}}
-          </ul>
-        </div>
-      </div>
-    </div> --}}
-  <!--#endregion -->
 
       <div class="page">
         <main>
@@ -154,110 +48,63 @@
         </main>
       </div>
       
+      <footer>
+        <div class="social-footer">
+          {{#each information as |i|}}
+            <h5>{{i.description}}</h5>
+          {{/each}}
 
-      {{!-- <footer>
-        <nav class="navbar navbar-dark bg-dark fixed-bottom hidden">
+          {{#each information as |i|}}
+            <h4>{{i.company}}</h4>
+          {{/each}}
 
-          <div class="container-fluid">
+          {{#each information as |i|}}
+            <a href={{i.map}}>
+              <h4 style="text-decoration:none; color:black;">{{i.address}}</h4>
+            </a>
+          {{/each}}
 
-            <div class="icons">
-              <a class="nav-icon navbar-brand fa fa-phone-square" href="tel:+14808991200"></a>
-              <p style="color: aliceblue;">Phone</p>
+          <a href="tel:+14808991200">
+            {{#each information as |i|}}
+              <h4 style="text-decoration:none; color:black;">{{i.phoneNumber}}</h4>
+            {{/each}}
+          </a>
+
+          <a href="mailto: buonosgilbert@yahoo.com">
+            {{#each information as |i|}}
+              <h4 style="text-decoration:none; color:black;">{{i.email}}</h4> 
+            {{/each}}
+          </a>
+
+          <div class="row">
+            <div class="column">
+              <a href="https://www.facebook.com/profile.php?id=61563441787315" class="button-social">
+                <i class="fa-brands fa-square-facebook" style="text-decoration:none; color:black; font-size:30px;"></i>
+              </a>
             </div>
 
-            <div class="icons">
-              <a class="nav-icon navbar-brand fa fa-book" href="/menu"></a>
-              <p style="color: aliceblue;">Menu</p>
+            <div class="column">
+              <a href="https://www.instagram.com/buonospizzahigley/?hl=en"  class="button-social">
+                <i class="fa-brands fa-instagram" style="text-decoration:none; color:black; font-size:30px;"></i>
+              </a>
             </div>
 
-            <div class="icons">
-              <a class="nav-icon navbar-brand fa fa-map-marker" href="/location"></a>
-              <p style="color: aliceblue;">Location</p>
-            </div>
-
-            <div class="icons">
-              <a class="nav-icon navbar-brand fa fa-yelp" href="/contact"></a>
-              <p style="color: aliceblue;">Contact</p> 
-            </div>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">🍕Welcome to Buono's Pizza🍕</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul>
-                  <center>
-                    <li class="nav-item btn btn-info">
-                      <a class="nav-link active" aria-current="page" href="/">Home</a>
-                    </li>
-
-                    <br>
-
-                    <li class="nav-item btn btn-info">
-                      <a class="nav-link" href="/menu">Menu</a>
-                    </li>
-
-                    <br>
-
-                    <li class="nav-item btn btn-info">
-                      <a class="nav-link" href="/cateringmenu">Catering</a>
-                    </li>
-
-                    <br>
-
-                    <li class="nav-item btn btn-info">
-                      <a class="nav-link" href="/location">Location</a>
-                    </li>
-
-                    <br>
-
-                    <li class="nav-item btn btn-info">
-                      <a class="nav-link" href="/hours">Hours</a>
-                    </li>
-
-                    <br>
-
-                    <li class="nav-item btn btn-info">
-                      <a class="nav-link" href="/contact">Contact<a>
-                    </li>
-
-                    <br>
-
-                    <li class="nav-item btn btn-info">
-                      <a class="nav-link" href="/about">About</a>
-                    </li>
-
-                    <br>
-
-                    <li class="nav-item dropdown btn btn-primary">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Login In / Out
-                      </a>
-                      <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="/employee/login">Admin</a></li>
-
-                        <li><a class="dropdown-item" href="#">Employees</a></li>
-
-                        <li><hr class="dropdown-divider"></li>
-
-                        <li><a class="dropdown-item" href="#">Guests</a></li>
-                      </ul>
-                    </li>
-                  </center>
-                </ul>
-
-              </div>
+            <div class="column">
+              {{#each information as |i|}}
+              <a href={{i.map}}>
+                <i class="fa-brands fa-google" style="text-decoration:none; color:black; font-size:30px;"></i>
+              </a>
+            {{/each}}
             </div>
           </div>
 
-        </nav>
+          <p>
+            COPYRIGHT &copy; 2024 BUONO'S HIGLEY - ALL RIGHTS RESERVED. SORRY NO CHECKS. GROUPS OF 8 OR MORE 15% GRATUITY Will BE INCLUDED. ALL PRICES SUBJECT TO CHANGE WITHOUT NOTICE.
+          </p> 
 
-      </footer> --}}
+          <h5>🤓Powered by: SmileyFaceStudios()🤓</h5>
+        </div>
+      </footer>
 
       <script src="/js/logout.js"></script>
       <script src="/js/login.js"></script>
@@ -272,40 +119,5 @@
           sidebar.style.display = 'none';
         }
       </script>
-
-      <script>
-        //window.onscroll = function() {
-          //myFunction()
-        //};
-        
-        //let navbar = document.getElementById("navbar");
-        //let sticky = navbar.offsetTop;
-        //let pathname = window.location.pathname;
-
-        //if (pathname === "/menu") {
-          //document.getElementById("picture").style.display = "none";
-          //document.getElementById("navbar").style.position = "fixed";
-          //document.getElementById("navbar").style.top = 0;
-        //}
-        //else {
-          //document.getElementById("picture").style.display = "block";
-        //}
-
-        //function myFunction() {
-          //if (window.pageYOffset >= sticky && pathname != "/menu") {
-            //navbar.classList.add("sticky")
-            //document.getElementById("picture").style.display = "none";
-          //} 
-          //else {
-            //navbar.classList.remove("sticky");
-            //document.getElementById("picture").style.display = "block";
-          //}
-        //}
-      </script>
-      
-
-      
-      
     </body>
-
   </html>

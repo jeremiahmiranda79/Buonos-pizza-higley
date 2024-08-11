@@ -160,6 +160,17 @@ var checkOpenStatus = function () {
         }
         break;
 
+      case Monday:
+        if (hour > 10 && hour < 20) {
+          document.getElementById('open-close').src=openSign;
+          document.getElementById('operation-status-text').textContent = openText;
+        }
+        else {
+          document.getElementById('operation-status-text').textContent = closedText;
+          document.getElementById('open-close').src=closedSign;
+        }
+        break;
+
       case Tuesday:
         if (hour > 10 && hour < 20) {
           document.getElementById('open-close').src=openSign;

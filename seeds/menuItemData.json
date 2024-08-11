@@ -1710,7 +1710,7 @@
     "description": "Choice of pasta topped with marinara sauce, two sausage links,parmesan, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette",
     "switchy": true,
 
-    "image": "/images/entree-pasta-sausage-3.jpg",
+    "image": "/images/entree-pasta-sausage-5.jpg",
 
     "size1": "Dinner portion for one",
     "price1": "$14.99",
@@ -2728,7 +2728,6 @@
     "desertType": true
   },
 
-
   {
     "categoryId": 15,
     "name": "Fountain Drink",
@@ -2895,22 +2894,6 @@
     "price3": null 
   },
   
-
-  {
-    "categoryId": 16,
-    "name": "Italian Ice",
-    "description": "Refreshing icy textured treat that is dairy-free, gluten-free, cholesterol-free, and fat-free",
-    "switchy": true,
-
-    "image": "/images/italian-ice.jpg",
-
-    "size1": "5 oz",
-    "price1": "$1.50",
-    "size2": "9 oz",
-    "price2": "$3.50",
-    "size3": "16 oz",
-    "price3": "$4.50"
-  },
   {
     "categoryId": 16,
     "name": "Drakes Devil Dogs",
@@ -2928,7 +2911,7 @@
   },
   {
     "categoryId": 16,
-    "name": "Drakes Coffe Cakes",
+    "name": "Drakes Coffee Cakes",
     "description": "Cakes with cinnamon streusel topping",
     "switchy": true,
 
@@ -2988,7 +2971,7 @@
   },
   {
     "categoryId": 16,
-    "name": "Drakes Yankee doodles",
+    "name": "Drakes Yankee Doodles",
     "description": "Creme filled devils food cakes",
     "switchy": true,
 

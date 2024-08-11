@@ -17,11 +17,6 @@
     <img src="/images/sign-hours.jpg" id="open-close" alt="">
   </div>
 
-  {{!-- <div>
-    <center>
-      <h1 id="operation-status-text"></h1>
-    </center>
-  </div> --}}
   <div class="heading buonos-font">
     <center>
       <h3 id="operation-status-text"></h1>
@@ -55,70 +50,6 @@
     </center>
   </div>
 
-  <div class="social-footer">
-  {{#each information as |i|}}
-    <h5>{{i.description}}</h5>
-  {{/each}}
-
-  {{#each information as |i|}}
-    <h4>{{i.company}}</h4>
-  {{/each}}
-
-    {{#each information as |i|}}
-      <a href={{i.map}}>
-        <h4 style="text-decoration:none; color:black;">{{i.address}}</h4>
-      </a>
-    {{/each}}
-
-  <a href="tel:+14808991200">
-    {{#each information as |i|}}
-      <h4 style="text-decoration:none; color:black;">{{i.phoneNumber}}</h4>
-    {{/each}}
-  </a>
-
-  <a href="mailto: buonosgilbert@yahoo.com">
-    {{#each information as |i|}}
-      <h4 style="text-decoration:none; color:black;">{{i.email}}</h4> 
-    {{/each}}
-  </a>
-
-  <div class="row">
-    <div class="column">
-      <a href="https://www.facebook.com/profile.php?id=61563441787315" class="button-social">
-        <i class="fa-brands fa-square-facebook" style="text-decoration:none; color:black; font-size:30px;"></i>
-      </a>
-    </div>
-
-    <div class="column">
-      <a href="https://www.instagram.com/buonospizzahigley/?hl=en"  class="button-social">
-        <i class="fa-brands fa-instagram" style="text-decoration:none; color:black; font-size:30px;"></i>
-      </a>
-    </div>
-
-    {{!-- <div class="column">
-      <a href="https://www.yelp.com/biz/buono-s-pizza-gilbert"  class="button-social">
-        <i class="fa-brands fa-yelp" style="text-decoration:none; color:black; font-size:30px;"></i>
-      </a>
-    </div> --}}
-
-    <div class="column">
-      {{!-- <a href="https://www.google.com/maps/dir//1464+E+Williams+Field+Rd,+Gilbert,+AZ+85295/@33.3074096,-111.8409328,12z/data=!4m6!4m5!1m0!1m2!1m1!1s0x872bac74ffc357e1:0xed805996e92f4bc4!3e0"  class="button-social">
-        <i class="fa-brands fa-google" style="text-decoration:none; color:black; font-size:30px;"></i>
-      </a> --}}
-      {{#each information as |i|}}
-      <a href={{i.map}}>
-        <i class="fa-brands fa-google" style="text-decoration:none; color:black; font-size:30px;"></i>
-      </a>
-    {{/each}}
-    </div>
-  </div>
-
-  <p>
-    COPYRIGHT &copy; 2024 BUONO'S HIGLEY - ALL RIGHTS RESERVED. SORRY NO CHECKS. GROUPS OF 8 OR MORE 15% GRATUITY Will BE INCLUDED. ALL PRICES SUBJECT TO CHANGE WITHOUT NOTICE.
-  </p> 
-
-  <h5>🤓Powered by: SmileyFaceStudios()🤓</h5>
-</div>
 </div>
 
 <script src="/js/hours.js"></script>

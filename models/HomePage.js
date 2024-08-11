@@ -81,6 +81,10 @@ HomePage.init(
       type: DataTypes.BOOLEAN,
       allowNull: false
     },
+    name5_2: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
     description5_2: {
       type: DataTypes.TEXT,
       allowNull: false
@@ -113,21 +117,57 @@ HomePage.init(
       type: DataTypes.BOOLEAN,
       allowNull: false
     },
+
     slice_switch: {
       type: DataTypes.BOOLEAN,
       allowNull: false
     },
+    slice_link: {
+      type: DataTypes.TEXT,
+      allowNull: true
+    },
+    slice_img: {
+      type: DataTypes.TEXT,
+      allowNull: true
+    },
+
     doordash_switch: {
       type: DataTypes.BOOLEAN,
       allowNull: false
     },
+    doordash_link: {
+      type: DataTypes.TEXT,
+      allowNull: true
+    },
+    doordash_img: {
+      type: DataTypes.TEXT,
+      allowNull: true
+    },
+
     ubereats_switch: {
       type: DataTypes.BOOLEAN,
       allowNull: false
     },
+    ubereats_link: {
+      type: DataTypes.TEXT,
+      allowNull: true
+    },
+    ubereats_img: {
+      type: DataTypes.TEXT,
+      allowNull: true
+    },
+
     grubhub_switch: {
       type: DataTypes.BOOLEAN,
       allowNull: false
+    },
+    grubhub_link: {
+      type: DataTypes.TEXT,
+      allowNull: true
+    },
+    grubhub_img: {
+      type: DataTypes.TEXT,
+      allowNull: true
     }
   },
   {
@@ -137,4 +177,5 @@ HomePage.init(
     modelName: 'homepage'
   }
 );
+
 module.exports = HomePage;
