@@ -8,11 +8,11 @@
     "image": "/images/pizza-regular-neopolitan-3.jpg",
 
     "size1": "Small 14 inch, 6 cut",
-    "price1": "$15.99",
+    "price1": 15.99,
     "size2": "Large 16 inch, 8 cut",
-    "price2": "$17.99",
+    "price2": 17.99,
     "size3": "Extra Large 18 inch, 8 cut",
-    "price3": "$19.99",
+    "price3": 19.99,
 
     "addonsDescription1": "Regular Toppings",
     "addonsPrice1": "$2.75",
@@ -44,11 +44,11 @@
 
 
     "size1": "Small 14 inch, 6 cut",
-    "price1": "$17.99",
+    "price1": 17.99,
     "size2": "Large 16 inch, 8 cut",
-    "price2": "$19.99",
+    "price2": 19.99,
     "size3": "Extra Large 18 inch, 8 cut",
-    "price3": "$21.99",
+    "price3": 21.99,
 
     "addonsDescription1": "Regular Toppings",
     "addonsPrice1": "$2.75",
@@ -70,9 +70,6 @@
     "desertSauce": false,
     "desertType": false
   }, 
-
-
-
   {
     "categoryId": 1,
     "name": "Siciliana",
@@ -80,12 +77,10 @@
     "switchy": true,
 
     "image": "/images/pizza-regular-sicilian-3.jpg",
-
-
     "size1": "Small, 8 cut",
-    "price1": "$18.99",
+    "price1": 18.99,
     "size2": "Large, 12 cut",
-    "price2": "$21.99",
+    "price2": 21.99,
     "size3": null,
     "price3": null,
 
@@ -110,17 +105,16 @@
     "desertType": false
   },
 
-
   {
     "categoryId": 2,
     "name": "Grandma Pie",
-    "description": "Long Island-style; a rustic rectangular pan pizza crust, topped with fresh mozzarella, garlic, & stone deck oven baked. Finished with a fresh tomato sauce, basil puree, & parmesan",
+    "description": "Long Island-style; a rustic rectangular pan pizza crust, topped with fresh mozzarella, garlic, & stone deck oven baked. Finished with a fresh tomato sauce, basil puree, & parmesan cheese",
     "switchy": true,
 
     "image": "/images/pizza-specialty-grandma-pie-3.jpg",
 
     "size1": "Small, 8 cut",
-    "price1": "$18.99",
+    "price1": 18.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -155,11 +149,11 @@
     "image": "/images/pizza-specialty-margherita-pizza-3.jpg",
 
     "size1": "Small 14 inch, 6 cut",
-    "price1": "$17.99",
+    "price1": 17.99,
     "size2": null,
     "price2": null,
     "size3": "Extra Large 18 inch, 8 cut",
-    "price3": "$21.99",
+    "price3": 21.99,
 
     "addonsDescription1": "Regular Toppings",
     "addonsPrice1": "$2.75",
@@ -190,11 +184,11 @@
     "image": "/images/pizza-specialty-meat-lover-3.jpg",
 
     "size1": "Small 14 inch, 6 cut",
-    "price1": "$24.99",
+    "price1": 24.99,
     "size2": "Large 16 inch, 8 cut",
-    "price2": "$26.99",
+    "price2": 26.99,
     "size3": "Extra Large 18 inch, 8 cut",
-    "price3": "$28.99",
+    "price3": 28.99,
 
     "addonsDescription1": "Regular Toppings",
     "addonsPrice1": "$2.75",
@@ -225,11 +219,11 @@
     "image": "/images/pizza-specialty-veggi-3.jpg",
 
     "size1": "Small 14 inch, 6 cut",
-    "price1": "$24.99",
+    "price1": 24.99,
     "size2": "Large 16 inch, 8 cut",
-    "price2": "$26.99",
+    "price2": 26.99,
     "size3": "Extra Large 18 inch, 8 cut",
-    "price3": "$28.99",
+    "price3": 28.99,
 
     "addonsDescription1": "Regular Toppings",
     "addonsPrice1": "$2.75",
@@ -260,11 +254,11 @@
     "image": "/images/pizza-specialty-works-3.jpg",
 
     "size1": "Small 14 inch, 6 cut",
-    "price1": "$27.99",
+    "price1": 27.99,
     "size2": "Large 16 inch, 8 cut",
-    "price2": "$29.99",
+    "price2": 29.99,
     "size3": "Extra Large 18 inch, 8 cut",
-    "price3": "$31.99",
+    "price3": 31.99,
 
     "addonsDescription1": "Regular Toppings",
     "addonsPrice1": "$2.75",
@@ -295,7 +289,7 @@
     "image": "/images/pizza-specialty-ziti-3.jpg",
 
     "size1": "Large 16 inch, 8 cut",
-    "price1": "$27.99",
+    "price1": 27.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -326,13 +320,13 @@
   {
     "categoryId": 3,
     "name": "Cauliflower",
-    "description": "Cauliflower-style; a thin, round 10 inch pizza crust that is a gluten-free, low-carb & keto pizza recipe. It's a simple blend of cauliflower, eggs, cheese, & a few spices that's flattened & baked into a golden crust",
+    "description": "Cauliflower-style; a thin, round 10 inch pizza crust that is a gluten-free, vegan recipe",
     "switchy": true,
 
     "image": "/images/pizza-gluten-free-cauliflower-3.jpg",
 
     "size1": "Small 10 inch, 4 cut",
-    "price1": "$13.49",
+    "price1": 13.49,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -361,13 +355,13 @@
   {
     "categoryId": 3,
     "name": "Gluten Free",
-    "description": "Gluten free-style; a thin, round 12 inch pizza crust that is a combination of gluten free flours & starches like rice flour, almond flour, potato starch, & tapioca starch",
+    "description": "Gluten free-style; a thin, round 12 inch pizza crust that is a combination of gluten free flours & starches",
     "switchy": true,
 
     "image": "/images/pizza-gluten-free-gluten-free-3.jpg",
 
     "size1": "Small 12 inch, 6 cut",
-    "price1": "$13.49",
+    "price1": 13.49,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -404,7 +398,7 @@
     "image": "/images/pizza-slice-neopolitan-3.jpg",
 
     "size1": "1/8th slice of a 20 inch pie",
-    "price1": "$2.99",
+    "price1": 2.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -439,7 +433,7 @@
     "image": "/images/pizza-slice-white-3.jpg",
 
     "size1": "1/8th slice of a 20 inch pie",
-    "price1": "$3.49",
+    "price1": 3.49,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -474,7 +468,7 @@
     "image": "/images/pizza-slice-sicilian-3.jpg",
 
     "size1": "1/8th slice of a 20 inch pie",
-    "price1": "$3.49",
+    "price1": 3.49,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -505,13 +499,13 @@
   {
     "categoryId": 5,
     "name": "Garlic Bread",
-    "description": "An Italian baguette brushed with garlic herb butter & lightly toasted. Served with marinara",
+    "description": "Foot long Italian bread brushed with garlic herb butter & lightly toasted. Served with marinara",
     "switchy": true,
 
     "image": "/images/app-garlic-bread-3.jpg",
 
     "size1": null,
-    "price1": "$4.99",
+    "price1": 4.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -540,13 +534,13 @@
   {
     "categoryId": 5,
     "name": "Sicilian Garlic Bread",
-    "description": "An Italian baguette brushed with garlic herb butter, topped with mozzarella, & lightly toasted. Served with marinara",
+    "description": "Foot long Italian bread brushed with garlic herb butter, topped with mozzarella, & lightly toasted. Served with marinara",
     "switchy": true,
 
     "image": "/images/app-sicilian-garlic-bread-3.jpg",
 
     "size1": null,
-    "price1": "$5.99",
+    "price1": 5.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -581,7 +575,7 @@
     "image": "/images/app-meatballs-ricotta-3.jpg",
 
     "size1": "Two piece",
-    "price1": "$6.99",
+    "price1": 6.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -616,7 +610,7 @@
     "image": "/images/app-meatball-sliders-3.jpg",
 
     "size1": "Five piece",
-    "price1": "$8.99",
+    "price1": 8.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -651,7 +645,7 @@
     "image": "/images/app-fries-3.jpg",
 
     "size1": null,
-    "price1": "$3.99",
+    "price1": 3.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -686,7 +680,7 @@
     "image": "/images/app-pepperoni-pizza-fries-3.jpg",
 
     "size": null,
-    "price1": "$8.99",
+    "price1": 8.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -721,7 +715,7 @@
     "image": "/images/app-disco-fries-3.jpg",
 
     "size1": null,
-    "price1": "$8.99",
+    "price1": 8.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -750,13 +744,13 @@
   {
     "categoryId": 5,
     "name": "Fried Mushrooms",
-    "description": "Cremini mushrooms, coated in a light & crispy seasoned batter, then deep fried to golden brown perfection. Served with buttermilk ranch",
+    "description": "Cremini mushrooms, coated in a light & crispy seasoned batter, then deep fried to golden brown perfection. Served with ranch dressing",
     "switchy": true,
 
     "image": "/images/app-fried-mushrooms-3.jpg",
 
     "size1": null,
-    "price1": "$8.99",
+    "price1": 8.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -785,13 +779,13 @@
   {
     "categoryId": 5,
     "name": "Fried Zucchini",
-    "description": "Fresh zucchini sticks, Italian bread crumb dredged, then deep fried to golden brown perfection. Served with buttermilk ranch",
+    "description": "Fresh zucchini sticks, Italian bread crumb dredged, then deep fried to golden brown perfection. Served with ranch dressing",
     "switchy": true,
 
     "image": "/images/app-zucchini-sticks-3.jpg",
     
     "size1": null,
-    "price1": "$8.99",
+    "price1": 8.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -826,7 +820,7 @@
     "image": "/images/app-mozzarella-sticks-3.jpg",
 
     "size1": "Six piece",
-    "price1": "$8.99",
+    "price1": 8.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -861,7 +855,7 @@
     "image": "/images/app-fried-ravioli-3.jpg",
 
     "size1": "Six piece",
-    "price1": "$8.99",
+    "price1": 8.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -896,9 +890,9 @@
     "image": "/images/app-wings-3.jpg",
 
     "size1": "Six piece",
-    "price1": "$8.75",
+    "price1": 8.75,
     "size2": "Ten piece",
-    "price2": "$14.99",
+    "price2": 14.99,
     "size3": null,
     "price3": null,
 
@@ -931,9 +925,9 @@
     "image": "/images/app-wings-bonless-3.jpg",
 
     "size1": "Six piece",
-    "price1": "$8.25",
+    "price1": 8.25,
     "size2": "Ten piece",
-    "price2": "$11.25",
+    "price2": 11.25,
     "size3": null,
     "price3": null,
 
@@ -968,9 +962,9 @@
     "image": "/images/calzone-3.jpg",
 
     "size1": "Small, serves one",
-    "price1": "$10.99",
+    "price1": 10.99,
     "size2": "Large, serves two-three",
-    "price2": "$14.99",
+    "price2": 14.99,
     "size3": null,
     "price3": null,
 
@@ -1006,7 +1000,7 @@
     "image": "/images/stromboli-3.jpg",
 
     "size1": "Large, serves one-two",
-    "price1": "$14.99",
+    "price1": 14.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1034,14 +1028,14 @@
   },
   {
     "categoryId": 7,
-    "name": "Sausage, Onion, & Pepper",
+    "name": "Sausage, Pepper, & Onion",
     "description": "An Italian turnover made with leavened dough & rolled. Stuffed with sausage, onions, green bell peppers, mozzarella, & stone deck oven baked. Served with marinara",
     "switchy": true,
 
     "image": "/images/stromboli-3.jpg",
 
     "size1": "Large, serves one-two",
-    "price1": "$14.99",
+    "price1": 14.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1076,7 +1070,7 @@
     "image": "/images/stromboli-3.jpg",
 
     "size1": "Large, serves one-two",
-    "price1": "$13.99",
+    "price1": 13.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1111,7 +1105,7 @@
     "image": "/images/stromboli-3.jpg",
 
     "size1": "Large, serves one-two",
-    "price1": "$14.99",
+    "price1": 14.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1146,7 +1140,7 @@
     "image": "/images/stromboli-3.jpg",
 
     "size1": "Large, serves one-two",
-    "price1": "$14.99",
+    "price1": 14.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1181,7 +1175,7 @@
     "image": "/images/stromboli-3.jpg",
 
     "size1": "Large, serves one-two",
-    "price1": "$14.99",
+    "price1": 14.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1207,7 +1201,6 @@
     "desertSauce": false,
     "desertType": false
   },
-
 
   {
     "categoryId": 8,
@@ -1218,7 +1211,7 @@
     "image": "/images/sausage-roll-3.jpg",
 
     "size1": "Small, serves one",
-    "price1": "$9.99",
+    "price1": 9.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1245,7 +1238,6 @@
     "desertType": false
   },
 
-
   {
     "categoryId": 9,
     "name": "Caesar Salad",
@@ -1255,9 +1247,9 @@
     "image": "/images/salad-caesar-3.jpg",
 
     "size1": "Small, serves one-two",
-    "price1": "$5.25",
+    "price1": 5.25,
     "size2": "Large, serves two-three",
-    "price2": "$7.99",
+    "price2": 7.99,
     "size3": null,
     "price3": null,
 
@@ -1290,9 +1282,9 @@
     "image": "/images/salad-toss-3.jpg",
 
     "size1": "Small, serves one-two",
-    "price1": "$5.25",
+    "price1": 5.25,
     "size2": "Large, serves two-three",
-    "price2": "$7.99",
+    "price2": 7.99,
     "size3": null,
     "price3": null,
 
@@ -1325,7 +1317,7 @@
     "image": "/images/salad-chef-3.jpg",
 
     "size1": "Large, serves two-three",
-    "price1": "$11.99",
+    "price1": 11.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1361,7 +1353,7 @@
 
 
     "size1": "Large, serves two-three",
-    "price1": "$11.99",
+    "price1": 11.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1396,7 +1388,7 @@
     "image": "/images/salad-antipasto-3.jpg",
 
     "size1": "Large, serves two-three",
-    "price1": "$11.99",
+    "price1": 11.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1431,7 +1423,7 @@
     "image": "/images/salad-caprese-3.jpg",
 
     "size1": "Large, serves two-three",
-    "price1": "$8.49",
+    "price1": 8.49,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1458,17 +1450,16 @@
     "desertType": false
   },
 
-
   {
     "categoryId": 10,
-    "name": "Chicken Parmesan",
-    "description": "Breaded chicken cutlets covered with marinara sauce & mozzarella. Served with a side of pasta, small house salad, & small Italian baguette",
+    "name": "Chicken Parmigiana",
+    "description": "Breaded chicken cutlets covered with marinara sauce & mozzarella. Served with a side of pasta, small salad, & small Italian bread",
     "switchy": true,
 
     "image": "/images/entree-chicken-parm-3.jpg",
 
     "size1": "Dinner portion for one",
-    "price1": "$20.99",
+    "price1": 20.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1496,14 +1487,14 @@
   },
   {
     "categoryId": 10,
-    "name": "Eggplant Parmesan",
-    "description": "Breaded eggplant cutlets covered with marinara sauce & mozzarella. Served with a side of pasta, small house salad, & small Italian baguette",
+    "name": "Eggplant Parmigiana",
+    "description": "Breaded eggplant cutlets covered with marinara sauce & mozzarella. Served with a side of pasta, small salad, & small Italian bread",
     "switchy": true,
 
     "image": "/images/entree-eggplant-parm-3.jpg",
 
     "size1": "Dinner portion for one",
-    "price1": "$20.99",
+    "price1": 20.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1532,13 +1523,13 @@
   {
     "categoryId": 10,
     "name": "Lasagna",
-    "description": "A baked six layer Neapolitan style lasagna stacked with bechamel, ground beef, marinara, ricotta, mozzarella, & parmesan. Served with a small house salad, & small Italian baguette",
+    "description": "A baked six layer Neapolitan style lasagna stacked with bechamel, ground beef, marinara, ricotta, mozzarella, & parmesan. Served with a side of pasta, small salad, & small Italian bread",
     "switchy": true,
 
     "image": "/images/entree-lasagna-3.jpg",
 
     "size1": "Dinner portion for one",
-    "price1": "$19.99",
+    "price1": 19.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1567,13 +1558,13 @@
   {
     "categoryId": 10,
     "name": "Cheese Ravioli",
-    "description": "Six jumbo ricotta stuffed ravioli topped with marinara sauce, parmesan, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette",
+    "description": "Six jumbo ricotta stuffed ravioli topped with marinara sauce, parmesan, & Italian herbs. Served with a side of pasta, small salad, & small Italian bread",
     "switchy": true,
 
     "image": "/images/entree-ravioli-3.jpg",
 
     "size1": "Dinner portion for one",
-    "price1": "$17.99",
+    "price1": 17.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1602,13 +1593,13 @@
   {
     "categoryId": 10,
     "name": "Pasta & Marinara Sauce",
-    "description": "Choice of pasta topped with marinara sauce, parmesan, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette",
+    "description": "Choice of pasta topped with marinara sauce, parmesan, & Italian herbs. Served with a side of pasta, small salad, & small Italian bread",
     "switchy": true,
 
     "image": "/images/entree-pasta-tomato-sauce-3.jpg",
 
     "size1": "Dinner portion for one",
-    "price1": "$9.49",
+    "price1": 9.49,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1637,13 +1628,13 @@
   {
     "categoryId": 10,
     "name": "Pasta & Meat Sauce",
-    "description": "Choice of pasta topped with meat sauce, parmesan, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette",
+    "description": "Choice of pasta topped with meat sauce, parmesan, & Italian herbs. Served with a side of pasta, small salad, & small Italian bread",
     "switchy": true,
 
     "image": "/images/entree-pasta-meat-sauce-4.jpg",
 
     "size1": "Dinner portion for one",
-    "price1": "$14.99",
+    "price1": 14.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1672,13 +1663,13 @@
   {
     "categoryId": 10,
     "name": "Pasta & Meatballs ",
-    "description": "Choice of pasta topped with marinara sauce, two jumbo meatballs, parmesan, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette",
+    "description": "Choice of pasta topped with marinara sauce, two jumbo meatballs, parmesan, & Italian herbs. Served with a side of pasta, small salad, & small Italian bread",
     "switchy": true,
 
     "image": "/images/entree-pasta-meatballs-3.jpg",
 
     "size1": "Dinner portion for one",
-    "price1": "$14.99",
+    "price1": 14.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1707,13 +1698,13 @@
   {
     "categoryId": 10,
     "name": "Pasta & Saugage",
-    "description": "Choice of pasta topped with marinara sauce, two sausage links,parmesan, & Italian herbs. Served with a side of pasta, small house salad, & small Italian baguette",
+    "description": "Choice of pasta topped with marinara sauce, two sausage links, parmesan, & Italian herbs. Served with a side of pasta, small salad, & small Italian bread",
     "switchy": true,
 
     "image": "/images/entree-pasta-sausage-5.jpg",
 
     "size1": "Dinner portion for one",
-    "price1": "$14.99",
+    "price1": 14.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1740,17 +1731,16 @@
     "desertType": false
   },
 
-
   {
     "categoryId": 11,
     "name": "Meatball Parmesan",
-    "description": "Foot long Italian baguette stuffed with meatballs, marinara sauce, mozzarella, oregano, & lightly toasted",
+    "description": "Foot long Italian bread with meatballs, marinara sauce, mozzarella, oregano, & lightly toasted",
     "switchy": true,
 
     "image": "/images/hot-sub-meatball-parm-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
-    "price1": "$10.50",
+    "price1": 10.50,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1779,13 +1769,13 @@
   {
     "categoryId": 11,
     "name": "Sausage Parmesan",
-    "description": "Foot long Italian baguette stuffed with suasage links, marinara sauce, mozzarella, oregano, & lightly toasted",
+    "description": "Foot long Italian bread with suasage links, marinara sauce, mozzarella, oregano, & lightly toasted",
     "switchy": true,
 
     "image": "/images/hot-sub-sausage-parm-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
-    "price1": "$10.50",
+    "price1": 10.50,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1814,13 +1804,13 @@
   {
     "categoryId": 11,
     "name": "Chicken Parmesan",
-    "description": "Foot long Italian baguette stuffed with breaded chicken cutlets, marinara sauce, mozzarella, oregano, & lightly toasted",
+    "description": "Foot long Italian bread with breaded chicken cutlets, marinara sauce, mozzarella, oregano, & lightly toasted",
     "switchy": true,
 
     "image": "/images/hot-sub-chicken-parm-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
-    "price1": "$11.99",
+    "price1": 11.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1849,13 +1839,13 @@
   {
     "categoryId": 11,
     "name": "Eggplant Parmesan",
-    "description": "Foot long Italian baguette stuffed with breaded eggplant cutlets, marinara sauce, mozzarella, oregano, & lightly toasted",
+    "description": "Foot long Italian bread with breaded eggplant cutlets, marinara sauce, mozzarella, oregano, & lightly toasted",
     "switchy": true,
 
     "image": "/images/hot-sub-eggplant-parm-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
-    "price1": "$11.99",
+    "price1": 11.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1884,13 +1874,13 @@
   {
     "categoryId": 11,
     "name": "Pepperoni Melt",
-    "description": "Foot long Italian baguette stuffed with pepperoni, marinara, mozzarella, oregano, & lightly toasted",
+    "description": "Foot long Italian bread with pepperoni, marinara, mozzarella, oregano, & lightly toasted",
     "switchy": true,
 
     "image": "/images/hot-sub-pepperoni-melt-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
-    "price1": "$10.50",
+    "price1": 10.50,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1919,13 +1909,13 @@
   {
     "categoryId": 11,
     "name": "Sausage, Onions, Peppers",
-    "description": "Foot long Italian baguette stuffed with sauteed sausage, onions, peppers, oregano, & lightly toasted",
+    "description": "Foot long Italian bread with sauteed sausage, onions, peppers, oregano, & lightly toasted",
     "switchy": true,
 
     "image": "/images/hot-sub-sausage-onion-pepper-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
-    "price1": "$10.50",
+    "price1": 10.50,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1954,13 +1944,13 @@
   {
     "categoryId": 11,
     "name": "Philly Steak",
-    "description": "Foot long Italian baguette stuffed with sauteed shaved steak, & onions. Topped with choice of melted cheese or cheese wiz, & lightly toasted",
+    "description": "Foot long Italian bread with sauteed steak, & onions. Topped with choice of melted cheese or cheese wiz, & lightly toasted",
     "switchy": true,
 
     "image": "/images/hot-sub-philly-steak-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
-    "price1": "$11.99",
+    "price1": 11.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -1989,13 +1979,13 @@
   {
     "categoryId": 11,
     "name": "Philly Chicken",
-    "description": "Foot long Italian baguette stuffed with sauteed shaved chicken breast, & onions. Topped with choice of melted cheese or cheese wiz, & lightly toasted",
+    "description": "Foot long Italian bread with sauteed chicken breast, & onions. Topped with choice of melted cheese or cheese wiz, & lightly toasted",
     "switchy": true,
 
     "image": "/images/hot-sub-philly-chicken-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
-    "price1": "$11.99",
+    "price1": 11.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2022,17 +2012,16 @@
     "desertType": false
   },
   
-
   {
     "categoryId": 12,
     "name": "Italian Deli Mix",
-    "description": "Foot long Italian baguette layered with salami, capocollo, soppressata, provolone, lettuce, tomatoes & onions. Choice of house dressing, mayonnaise, &/or mustard",
+    "description": "Foot long Italian bread with salami, capocollo, soppressata, provolone, lettuce, tomatoes & onions. Choice of house dressing, mayonnaise, &/or mustard",
     "switchy": true,
 
     "image": "/images/cold-sub-italian-mix-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
-    "price1": "$9.99",
+    "price1": 9.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2061,13 +2050,13 @@
   {
     "categoryId": 12,
     "name": "Ham & Provolone",
-    "description": "Foot long Italian baguette layered with deli ham, provolone, lettuce, tomatoes & onions. Choice of house dressing, mayonnaise, &/or mustard",
+    "description": "Foot long Italian bread with deli ham, provolone, lettuce, tomatoes & onions. Choice of house dressing, mayonnaise, &/or mustard",
     "switchy": true,
 
     "image": "/images/cold-sub-ham-provalone-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
-    "price1": "$8.99",
+    "price1": 8.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2096,13 +2085,13 @@
   {
     "categoryId": 12,
     "name": "Salami & Provolone",
-    "description": "Foot long Italian baguette layered with salami, provolone, lettuce, tomatoes & onions. Choice of house dressing, mayonnaise, &/or mustard",
+    "description": "Foot long Italian bread with salami, provolone, lettuce, tomatoes & onions. Choice of house dressing, mayonnaise, &/or mustard",
     "switchy": true,
 
     "image": "/images/cold-sub-salami-provalone-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
-    "price1": "$8.99",
+    "price1": 8.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2131,13 +2120,13 @@
   {
     "categoryId": 12,
     "name": "Capocollo & Provolone",
-    "description": "Foot long Italian baguette layered with capocollo, provolone, lettuce, tomatoes & onions. Choice of house dressing, mayonnaise, &/or mustard",
+    "description": "Foot long Italian bread with capocollo, provolone, lettuce, tomatoes & onions. Choice of house dressing, mayonnaise, &/or mustard",
     "switchy": true,
 
     "image": "/images/cold-sub-cappi-provalone-3.jpg",
 
     "size1": "Twelve inches, serves one-two",
-    "price1": "$8.99",
+    "price1": 8.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2166,13 +2155,13 @@
   {
     "categoryId": 12,
     "name": "Pepperoni & Provolone",
-    "description": "Foot long Italian baguette layered with pepperoni, provolone, lettuce, tomatoes & onions. Choice of house dressing, mayonnaise, &/or mustard",
+    "description": "Foot long Italian bread with pepperoni, provolone, lettuce, tomatoes & onions. Choice of house dressing, mayonnaise, &/or mustard",
     "switchy": true,
 
     "image": "/images/cold-sub-pepperoni-provalone-2.jpg",
 
     "size1": "Twelve inches, serves one-two",
-    "price1": "$8.99",
+    "price1": 8.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2209,7 +2198,7 @@
     "image": "/images/side-pasta-3.jpg",
 
     "size1": "Side portion",
-    "price1": "$4.99",
+    "price1": 4.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2244,7 +2233,7 @@
     "image": "/images/side-meatball-pasta-3.jpg",
 
     "size1": "Side portion",
-    "price1": "$6.99",
+    "price1": 6.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2279,7 +2268,7 @@
     "image": "/images/side-sausage-pasta-3.jpg",
 
     "size1": "Side portion",
-    "price1": "$6.99",
+    "price1": 6.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2314,7 +2303,7 @@
     "image": "/images/side-meatballs-3.jpg",
 
     "size1": "Two jumbo meatballs",
-    "price1": "$4.99",
+    "price1": 4.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2349,7 +2338,7 @@
     "image": "/images/side-sausage-3.jpg",
 
     "size1": "Two links",
-    "price1": "$4.99",
+    "price1": 4.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2378,13 +2367,13 @@
   {
     "categoryId": 13,
     "name": "Garlic Bread",
-    "description": "An Italian baguette brushed with garlic herb butter & lightly toasted. Served with marinara",
+    "description": "Foot long Italian bread brushed with garlic herb butter & lightly toasted. Served with marinara",
     "switchy": true,
 
     "image": "/images/app-garlic-bread-3.jpg",
 
     "size1": "12 inch baguette",
-    "price1": "$4.99",
+    "price1": 4.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2419,7 +2408,7 @@
     "image": "/images/app-fries-3.jpg",
 
     "size1": "Side of fries",
-    "price1": "$3.99",
+    "price1": 3.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2450,13 +2439,13 @@
   {
     "categoryId": 14,
     "name": "Black & White Cookie",
-    "description": "Queens NYC-style; a single round cookie frosted in two colors, one half vanilla & the other half chocolate",
+    "description": "Direct from NYC a large cookie frosted half vanilla & half chocolate",
     "switchy": true,
 
     "image": "/images/dessert-black-white-cookie-3.jpg",
 
     "size1": "Single jumbo cookie",
-    "price1": "$3.75",
+    "price1": 3.75,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2485,13 +2474,13 @@
   {
     "categoryId": 14,
     "name": "Crumb Cake",
-    "description": "Queens NYC-style; a cake made of yeast dough covered with a sweet crumb topping referred to as streusel",
+    "description": "A delicious NYC crumb cake",
     "switchy": true,
 
     "image": "/images/dessert-crumb-cake-3.jpg",
 
     "size1": "Single slice",
-    "price1": "$4.50",
+    "price1": 4.50,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2520,13 +2509,13 @@
   {
     "categoryId": 14,
     "name": "Cannoli",
-    "description": "Sicilian-style; a tube-shaped shell of fried pastry dough, filled with a sweet, creamy filling containing ricotta, mini chocolate chips, & topped with crushed pistachios",
+    "description": "Cannoli shell filled with a sweet, creamy filling containing ricotta, mini chocolate chips, & topped with crushed pistachios",
     "switchy": true,
 
     "image": "/images/dessert-cannoli-3.jpg",
 
     "size1": "Single jumbo tube",
-    "price1": "$5.49",
+    "price1": 5.49,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2555,13 +2544,13 @@
   {
     "categoryId": 14,
     "name": "Tiramisu",
-    "description": "A coffee-flavoured Italian dessert made of ladyfingers (savoiardi) dipped in coffee, layered with a whipped mascarpone, & flavoured with cocoa",
+    "description": "Italian dessert made of ladyfingers dipped in coffee, layered with a whipped mascarpone, & cocoa",
     "switchy": true,
 
     "image": "/images/dessert-tiramisu-3.jpg",
 
     "size1": "Single slice",
-    "price1": "$6.49",
+    "price1": 6.49,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2590,13 +2579,13 @@
   {
     "categoryId": 14,
     "name": "Cheese Cake",
-    "description": "NYC-style; a dense and rich cheese cake baked in a graham cracker crust with sweet cream cheese vanilla filling",
+    "description": "NYC-style cheese cake with vanilla cream cheese filling in a graham cracker crust",
     "switchy": true,
 
     "image": "/images/dessert-cheese-cake-3.jpg",
 
     "size1": "Single slice",
-    "price1": "$6.49",
+    "price1": 6.49,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2625,13 +2614,13 @@
   {
     "categoryId": 14,
     "name": "Limoncello Cake",
-    "description": "Fluffy sponge cake layers, brushed with a limoncello syrup, filled with a thin layer of lemon curd and frosted with a decadent mascarpone and cream cheese frosting",
+    "description": "Fluffy sponge cake with limoncello mascarpone and cream cheese frosting",
     "switchy": true,
 
     "image": "/images/dessert-lemoncello-3.jpg",
 
     "size1": "Single slice",
-    "price1": "$6.49",
+    "price1": 6.49,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2660,13 +2649,13 @@
   {
     "categoryId": 14,
     "name": "Pistachio Ricotta Cake",
-    "description": "A buttery crumble layer on the top and bottom sandwiched with a rich, creamy smooth pistachio ricotta filling, and layered with candied pistachio",
+    "description": "A combination of smooth ricotta filling, crushed pistachio, & a delicsous frosting",
     "switchy": true,
 
     "image": "/images/dessert-pistachio-ricotta-3.jpg",
 
     "size1": "Single slice",
-    "price1": "$6.49",
+    "price1": 6.49,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2695,13 +2684,13 @@
   {
     "categoryId": 14,
     "name": "Zeppolis",
-    "description": "Italian-style; deep-fried dough fritters & topped with powdered sugar",
+    "description": "Italian deep-fried dough topped with powdered sugar",
     "switchy": true,
 
     "image": "/images/dessert-zeppolis-3.jpg",
 
     "size1": "A baker's dozen",
-    "price1": "$6.49",
+    "price1": 6.49,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2728,6 +2717,7 @@
     "desertType": true
   },
 
+
   {
     "categoryId": 15,
     "name": "Fountain Drink",
@@ -2737,7 +2727,7 @@
     "image": "/images/beverage-fountain.jpg",
 
     "size1": "20 oz drink",
-    "price1": "$2.75",
+    "price1": 2.75,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2752,7 +2742,7 @@
     "image": "/images/beverage-bottled-soda.jpg",
 
     "size1": "2 liter bottle",
-    "price1": "$3.99",
+    "price1": 3.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2767,7 +2757,7 @@
     "image": "/images/beverage-bottled-water.jpg",
 
     "size1": "16 oz bottle",
-    "price1": "$1.99",
+    "price1": 1.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2782,7 +2772,7 @@
     "image": "/images/beverage-ice-tea.jpg",
 
     "size1": "16 oz bottle",
-    "price1": "$2.99",
+    "price1": 2.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2797,7 +2787,7 @@
     "image": "/images/beverage-az-lemonade.jpg",
 
     "size1": "32 oz bottle",
-    "price1": "$6.99",
+    "price1": 6.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2812,7 +2802,7 @@
     "image": "/images/beverage-dr-brown.jpg",
 
     "size1": "12 oz can",
-    "price1": "$2.50",
+    "price1": 2.50,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2827,7 +2817,7 @@
     "image": "/images/beverage-yoohoo.jpg",
 
     "size1": "12 oz bottle",
-    "price1": "$2.99",
+    "price1": 2.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2842,7 +2832,7 @@
     "image": "/images/beverage-domestic-beer.jpg",
 
     "size1": "12 oz bottle",
-    "price1": "$3.75",
+    "price1": 3.75,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2857,7 +2847,7 @@
     "image": "/images/beverage-imported-beer.jpg",
 
     "size1": "12 oz bottle",
-    "price1": "$4.50",
+    "price1": 4.50,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2872,9 +2862,9 @@
     "image": "/images/beverage-red-wine.jpg",
 
     "size1": "By the glass",
-    "price1": "$9.00",
+    "price1": 9.00,
     "size2": "By the bottle",
-    "price2": "$26.00",
+    "price2": 26.00,
     "size3": null,
     "price3": null 
   },
@@ -2887,12 +2877,14 @@
     "image": "/images/beverage-white-wine.jpg",
 
     "size1": "By the glass",
-    "price1": "$9.00",
+    "price1": 9.00,
     "size2": "By the bottle",
-    "price2": "$26.00",
+    "price2": 26.00,
     "size3": null,
     "price3": null 
   },
+  
+
   
   {
     "categoryId": 16,
@@ -2903,7 +2895,7 @@
     "image": "/images/drakes-devil-dog.jpg",
 
     "size1": "8 count individually wrapped",
-    "price1": "$6.99",
+    "price1": 6.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2911,14 +2903,14 @@
   },
   {
     "categoryId": 16,
-    "name": "Drakes Coffee Cakes",
+    "name": "Drakes Coffe Cakes",
     "description": "Cakes with cinnamon streusel topping",
     "switchy": true,
 
     "image": "/images/drakes-coffee-cake.jpg",
 
     "size1": "8 count individually wrapped",
-    "price1": "$6.99",
+    "price1": 6.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2933,7 +2925,7 @@
     "image": "/images/drakes-ring-ding.jpg",
 
     "size1": "8 count individually wrapped",
-    "price1": "$6.99",
+    "price1": 6.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2948,7 +2940,7 @@
     "image": "/images/drakes-funny-bone.jpg",
 
     "size1": "10 count twin wrapped",
-    "price1": "$6.99",
+    "price1": 6.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2963,7 +2955,7 @@
     "image": "/images/drakes-yodel.jpg",
 
     "size1": "10 count twin wrapped",
-    "price1": "$6.99",
+    "price1": 6.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2978,7 +2970,7 @@
     "image": "/images/drakes-yankee-doodle.jpg",
 
     "size1": "8 count individually wrapped",
-    "price1": "$6.99",
+    "price1": 6.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -2993,7 +2985,7 @@
     "image": "/images/drakes-yodel-boston-creme.jpg",
 
     "size1": "10 count twin wrapped",
-    "price1": "$6.99",
+    "price1": 6.99,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -3008,7 +3000,7 @@
     "image": "/images/polly-o-ricotta.jpg",
 
     "size1": "5 lb",
-    "price1": "Market Price",
+    "price1": null,
     "size2": null,
     "price2": null,
     "size3": null,
@@ -3023,7 +3015,7 @@
     "image": "/images/mikes-hot-honey-3.jpg",
 
     "size1": "12 oz",
-    "price1": "$10.00",
+    "price1": 10.00,
     "size2": null,
     "price2": null,
     "size3": null,
