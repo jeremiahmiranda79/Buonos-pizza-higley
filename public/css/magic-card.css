@@ -119,16 +119,22 @@
   backdrop-filter: blur(8px);
 }
 
-.magic-card-container .magic-card:hover {
+/* .magic-card-container .magic-card:hover {
   transform: translateY(0);
   opacity: 1;
-}
+} */
 
-.magic-card-container .magic-card-1:hover {
+.magic-card-container .magic-card-1 {
   background: url(../images/magnet-1.jpg);
   background-position: center;
   background-size: 100% auto;
   /* animation: rotate 1.4s linear infinite; */
+}
+
+.magic-card-container .magic-card-2 {
+  background: url(../images/magnet-full-2.jpg);
+  background-position: center;
+  background-size: 100% auto;
 }
 
 .magic-card-container .magic-card-2:hover {

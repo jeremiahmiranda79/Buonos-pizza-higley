@@ -134,9 +134,17 @@ const isAdmin = require('../../utils/admin');
 	// Route to find menu
 	router.get('/menu-1', async (req, res) => {
 		try {
-			const c = await Categories.findAll({ include: [{ model: MenuItems }] });	
+			const c = await Categories.findAll({ include: [{ model: MenuItems }],
+				order: [
+					['id', 'ASC'],
+					[{ model: MenuItems }, 'price1', 'ASC'],
+				],
+			});
+
 			const serializedItems = c.map((x) => x.get({ plain: true }));
+
 			const i = await Information.findAll();
+
 			const serializedInfo = i.map((x) => x.get({ plain: true }));
 			res.status(200).render('menu', {
 				loggedIn: req.session.loggedIn, 
