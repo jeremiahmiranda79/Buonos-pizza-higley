@@ -6,7 +6,7 @@ function sendEmail() {
     message_id: document.getElementById('message_id').value
   }
 
-  emailjs.send('service_3vwnz4m', 'template_ndi0r6f', params).then(function (res) {
+  emailjs.send('service_3vwnz4m', 'template_j8ohxzn', params).then(function (res) {
     alert('Success! ' + res.status);
   })
 }
