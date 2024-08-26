@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="/css/trivia.css" />
+<link rel="stylesheet" href="/css/social.css">
 
 <style>
   .grid-container {
@@ -35,30 +36,29 @@
   }
 </style>
 
-<div id="root">
+<div class="page-container">
+  <br>
+
+  <div id="root">
   <header>
     <h2 class="title">High Scores</h2>
   </header>
 
   <section id="question"></section>
 
-  <main >
+  <div class="grid-container">
+    {{#each score as |s|}}
+      <h1>{{s.name}}</h1>
+      <h1>{{s.score}}</h1>
+    {{/each}}
+  </div>
 
-    <div class="grid-container">
-      {{#each score as |s|}}
-        <h1>{{s.name}}</h1>
-        <h1>{{s.score}}</h1>
-      {{/each}}
-    </div>
-    
-    
+  <section id="buttons">
+    <center>
+      <button class="start-button"><a href="/trivia-home-page">Go Back</a></button>
+    </center>
+  </section>
 
-    <section id="buttons">
-      <center>
-        <button class="start-button"><a href="/trivia-home-page">Go Back</a></button>
-      </center>
-    </section>
-
-  </main>
+  </div>
 
 </div>

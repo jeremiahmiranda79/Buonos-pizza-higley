@@ -167,7 +167,6 @@ const isAdmin = require('../../utils/admin');
 			const serializedItem = i.get({ plain: true });
 			const t = await Information.findAll();
 			const serializedInfo = t.map((x) => x.get({ plain: true }));
-
 			const d = await Dressings.findAll();
 			const serializedDressings = d.map((x) => x.get({ plain: true }));
 			const p = await Pastas.findAll();
@@ -468,7 +467,11 @@ const isAdmin = require('../../utils/admin');
 	// Route to find trivia
 	router.get('/trivia-home-page', async (req, res) => {
 		try {
+			const t = await Information.findAll();
+			const serializedInfo = t.map((x) => x.get({ plain: true }));
+
 			res.status(200).render('trivia-home-page', {
+				information: serializedInfo,
 			});
 		}
 		catch (error) {
@@ -479,6 +482,9 @@ const isAdmin = require('../../utils/admin');
 
 	router.get('/trivia-high-scores-page', async (req, res) => {
 		try {
+			const t = await Information.findAll();
+			const serializedInfo = t.map((x) => x.get({ plain: true }));
+
 			const s = await TriviaScores.findAll({
 				order: [
 					['score', 'DESC']
@@ -486,8 +492,9 @@ const isAdmin = require('../../utils/admin');
 			});
 
 			const serializedTriviaScores = s.map((x) => x.get({ plain: true }));
-
+			
 			res.status(200).render('trivia-high-scores-page', {
+				information: serializedInfo,
 				score: serializedTriviaScores,
 			});
 		}
