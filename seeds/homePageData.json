@@ -39,20 +39,20 @@
     "description5_5": "BUONO'S MANAGEMENT",
     "name5_5Switch": true,
 
-    "slice_switch": true,
+    "slice_switch": false,
     "slice_link": "#",
     "slice_img": "/images/slice-logo-600x200.jpg",
 
     "doordash_switch": true,
-    "doordash_link": "#",
+    "doordash_link": "https://www.doordash.com/store/buono's-higley-gilbert-30837549/?srsltid=AfmBOophinLYOtATvUW-1BUuWOl3moE_a-AJnlz-YvlSvoTa-ic0KP0y",
     "doordash_img": "/images/delivery-doordash-3.jpg",
 
     "ubereats_switch": true,
-    "ubereats_link": "#",
+    "ubereats_link": "https://www.ubereats.com/store/buonos-higley/GhFJxhcjWL2ALTRlI1c9rQ?diningMode=DELIVERY",
     "ubereats_img": "/images/delivery-uber-eats.jpg",
     
     "grubhub_switch": true,
-    "grubhub_link": "#",
+    "grubhub_link": "https://www.grubhub.com/restaurant/buonos-higley-pizza-1652-n-higley-rd-gilbert/8878248",
     "grubhub_img": "/images/delivery-grubhub.jpg"
   }
 ]
