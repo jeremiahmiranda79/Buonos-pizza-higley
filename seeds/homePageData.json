@@ -39,8 +39,8 @@
     "description5_5": "BUONO'S MANAGEMENT",
     "name5_5Switch": true,
 
-    "slice_switch": false,
-    "slice_link": "#",
+    "slice_switch": true,
+    "slice_link": "https://slicelife.com/restaurants/az/gilbert/85234/buonos-higley/menu?utm_campaign=order_now_button&utm_medium=referral&utm_source=buonosgilbert.com&utm_content=custom_link",
     "slice_img": "/images/slice-logo-600x200.jpg",
 
     "doordash_switch": true,
