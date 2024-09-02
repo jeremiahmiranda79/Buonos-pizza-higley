@@ -129,8 +129,8 @@ var checkOpenStatus = function () {
 
   //#region Open Status
     const openText = 'Yes we are Open. Come by and visit!';
-    const closedText = 'Sorry we are closed. Please see the hours of operation below!';
-    const openHoliday = 'Yes we are open. Come celebrate the holiday with us!';
+    const closedText = 'Sorry we are currently closed. We will reopen during the hours of operation listed below!';
+    const openHoliday = 'Yes we are open today during our regular operation hours. Come celebrate the holiday with us!';
     const closedHoliday = 'Sorry we are closed for holiday to let our staff be with family and friends. Happy holiday from us to you!';
   //#endregion
 
@@ -326,7 +326,8 @@ var checkOpenStatus = function () {
           break;
         
         case getDateString(year, September, FirstWeek, Monday):
-          document.getElementById('open-close').src=laborDayImg;document.document.getElementById('operation-status-text').textContent = closedHoliday;
+          document.getElementById('open-close').src=laborDayImg;
+          document.getElementById('operation-status-text').textContent = openHoliday;
           break;
 
         case getDateString(year, May, LastWeek, Monday): 
