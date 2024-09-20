@@ -64,17 +64,17 @@
             </a>
           {{/each}}
 
-          <a href="tel:+14802182338">
-            {{#each information as |i|}}
+          {{#each information as |i|}}
+            <a href={{i.telNumber}}>
               <h4 style="text-decoration:none; color:black;">{{i.phoneNumber}}</h4>
-            {{/each}}
-          </a>
-
-          <a href="mailto: buonosgilbert@yahoo.com">
-            {{#each information as |i|}}
+            </a>
+          {{/each}}
+    
+          {{#each information as |i|}}
+            <a href="mailto: buonoshigley@gmail.com">
               <h4 style="text-decoration:none; color:black;">{{i.email}}</h4> 
-            {{/each}}
-          </a>
+            </a>
+          {{/each}}
 
           <div class="row">
             <div class="column">

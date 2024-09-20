@@ -1,5 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 const connection = require('../config/connection');
+
 class Information extends Model {};
 Information.init(
   {
@@ -33,6 +34,10 @@ Information.init(
       type: DataTypes.STRING,
       allowNull: false
     },
+    mailto: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
     style: {
       type: DataTypes.STRING,
       allowNull: false
@@ -50,6 +55,7 @@ Information.init(
       allowNull: false
     }
   },
+
   {
     sequelize: connection,
     timestamps: true,
@@ -57,4 +63,5 @@ Information.init(
     modelName: 'information'
   }
 );
+
 module.exports = Information;
