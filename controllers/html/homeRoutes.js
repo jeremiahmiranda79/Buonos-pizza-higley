@@ -271,6 +271,28 @@ const isAdmin = require('../../utils/admin');
 		}
 	});
 
+	//#region Specials-2
+	router.get('/specials-2', async (req, res) => {
+		try {
+			// const i = await Categories.findAll({ include: [{ model: MenuItems }] });	
+			// const serializedItems = i.map((x) => x.get({ plain: true }));
+			const i = await Information.findAll();
+			const serializedInfo = i.map((x) => x.get({ plain: true }));
+
+			res.status(200).render('specials', {
+				loggedIn: req.session.loggedIn, 
+				// name: req.session.name,
+				// items: serializedItems
+				information: serializedInfo
+			});
+		}
+		catch (error) {
+			console.log(error);
+			res.status(500).json(error);// 500 - internal server error
+		}
+	});
+//#endregion
+
 	// Route to find a single menu item
 	// router.get('/menu/:menuitemsId', async (req, res) => {
 	// 	try {

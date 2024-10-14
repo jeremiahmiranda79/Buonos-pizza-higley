@@ -1,0 +1,238 @@
+<head>
+  <link rel="stylesheet" href="/css/style-page.css">
+  <link rel="stylesheet" href="/css/social.css">
+  <link rel="stylesheet" href="/css/style-page.css">
+
+  <style>
+    .test {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .test-1 {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      filter: sepia(0%) saturate(30%) brightness(20%) hue-rotate(80deg);
+    }
+
+    .special-container {
+      position: relative;
+      text-align: center;
+    }
+
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: rgb(158, 36, 20);
+      color: var(--buonos-red);
+    }
+
+    .strokeme {
+      color: var(--buonos-red);
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+  </style>
+</head>
+
+<br>
+
+<div class="heading buonos-font">
+  <center>
+    <h2>Buonos Specials</h2>
+  </center>
+</div>
+
+<section label="information"> 
+  {{#each information as |i|}}
+    {{#if i.information1_switch}}
+      <center>
+        <h4 style="color: black;">{{i.company}}</h4>
+
+        <a href={{i.map}} style="text-decoration:none; color:black;">
+          <h4>{{i.address}}</h4>
+        </a>
+
+        <a href={{i.telNumber}} style="text-decoration:none; color:black;">
+          <h4>{{i.phoneNumber}}</h4>
+        </a>
+
+        <a href="mailto: buonosgilbert@yahoo.com" style="text-decoration: none; color:black;">
+          <h4>{{i.email}}</h4>
+        </a>
+
+        <h6 style="color: black;">{{i.style}}</h6>
+
+      </center> 
+    {{/if}}
+  {{/each}} 
+</section>
+
+<br>
+
+<div class="heading buonos-font">
+  <center>
+    <h2>Game Day</h2>
+  </center>
+</div>
+
+<br>
+
+<div class="heading buonos-font">
+  <center>
+    <h4>Large 16" one topping Neapolitan pizza & 10 wings for $29.99 plus tax.</h4>
+    <h4>Available for dine in or take out, open to close on NFL game day's only(Sunday, Monday, Thursday).</h4>
+  </center>
+</div>
+
+<br>
+
+<center>
+  <img src="/images/specials/sunday-football.webp" alt="Paris" style="width:50%" >
+</center>
+  
+<br>
+
+<center>
+  <a href="/menu-1" class="active btn btn-primary" style="background-color: var(--buonos-red)">View our full menu here!</a>
+</center>
+
+<br>
+
+<div>
+  <center>
+      <h2>Daily Lunch Specials</h2>
+      <h3>Available till 4pm</h3>
+      <h5>(Fountain Drink included)</h5>
+      
+      <div class="">
+        <h4>2 Slice of Cheese</h4>
+        <h4>$6.99</h4>
+        <hr>
+        <h4>1 Slice of Cheese w/ Salad</h4>
+        <h4>$7.99</h4>
+        <hr>
+        <h4>6 inch Cold Sub w/ Fries</h4>
+        <h4>$9.99</h4>
+
+      </div>
+      <hr>
+      <h5>*Ask us about our all day Specials*</h5>
+    
+  
+
+  </center>
+  </div>
+
+{{!-- <div class="special-container">
+  <img src="/images/ny-skyline-1.webp" alt="Paris" style="width:70%" class="test-1">
+
+
+  <div class="centered strokeme">
+    <center>
+      <h4>2 Slice of Cheese</h4>
+      <h4>$6.99</h4>
+      <hr>
+      <h4>1 Slice of Cheese w/ Salad</h4>
+      <h4>$7.99</h4>
+      <hr>
+      <h4>6 inch Cold Sub w/ Fries</h4>
+      <h4>$9.99</h4>
+      <hr>
+      <h5>*Ask us about our all day Specials*</h5>
+    </center>
+  </div>
+
+</div> --}}
+
+<br>
+
+<center>
+  <a href="/menu-1" class="active btn btn-primary" style="background-color: var(--buonos-red)">View our full menu here!</a>
+</center>
+
+<br>
+
+<div class="heading buonos-font"></div>
+  <center>
+    <h2>Pizza Topping Specials</h2>
+  </center>
+</div>
+
+<div class="heading buonos-font">
+  <center>
+    <h3>All day every day</h3>
+    <h4>Any 4 toppings</h4>
+    <h4>$8.99</h4>
+    {{!-- <h5>*Ask us about our all day Specials*</h5> --}}
+  </center>
+</div>
+
+<br>
+
+<center>
+  <a href="/menu-1" class="active btn btn-primary" style="background-color: var(--buonos-red)">View our full menu here!</a>
+</center>
+
+{{!-- <div class="social-footer">
+  {{#each information as |i|}}
+    <h5>{{i.description}}</h5>
+  {{/each}}
+
+  {{#each information as |i|}}
+    <h4>{{i.company}}</h4>
+  {{/each}}
+
+  <a href="https://www.google.com/maps/dir//1464+E+Williams+Field+Rd,+Gilbert,+AZ+85295/@33.3074096,-111.8409328,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x872bac74ffc357e1:0xed805996e92f4bc4!2m2!1d-111.7585316!2d33.3074368?entry=ttu">
+    {{#each information as |i|}}
+      <h4 style="text-decoration:none; color:black;">{{i.address}}</h4>
+    {{/each}}
+  </a>
+
+  <a href="tel:+14808991200">
+    {{#each information as |i|}}
+      <h4 style="text-decoration:none; color:black;">{{i.phoneNumber}}</h4>
+    {{/each}}
+  </a>
+
+  <a href="mailto: buonosgilbert@yahoo.com">
+    {{#each information as |i|}}
+      <h4 style="text-decoration:none; color:black;">{{i.email}}</h4> 
+    {{/each}}
+  </a>
+
+  <div class="row">
+    <div class="column">
+      <a href="https://www.facebook.com/people/Buonos-PIZZA-Gilbert/100067421335508/?mibextid=ZbWKwL" class="button-social">
+        <i class="fa-brands fa-square-facebook" style="text-decoration:none; color:black; font-size:30px;"></i>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="https://www.instagram.com/buonospizzagilbert/?hl=en"  class="button-social">
+        <i class="fa-brands fa-instagram" style="text-decoration:none; color:black; font-size:30px;"></i>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="https://www.yelp.com/biz/buono-s-pizza-gilbert"  class="button-social">
+        <i class="fa-brands fa-yelp" style="text-decoration:none; color:black; font-size:30px;"></i>
+      </a>
+    </div>
+
+    <div class="column">
+      <a href="https://www.google.com/maps/dir//1464+E+Williams+Field+Rd,+Gilbert,+AZ+85295/@33.3074096,-111.8409328,12z/data=!4m6!4m5!1m0!1m2!1m1!1s0x872bac74ffc357e1:0xed805996e92f4bc4!3e0"  class="button-social">
+        <i class="fa-brands fa-google" style="text-decoration:none; color:black; font-size:30px;"></i>
+      </a>
+    </div>
+  </div>
+
+  <p>
+    COPYRIGHT &copy; 2024 BUONO'S GILBERT - ALL RIGHTS RESERVED. SORRY NO CHECKS. GROUPS OF 8 OR MORE 15% GRATUITY Will BE INCLUDED. ALL PRICES SUBJECT TO CHANGE WITHOUT NOTICE.
+  </p> 
+
+  <h5>🤓Powered by: SmileyFaceStudios()🤓</h5>
+</div> --}}

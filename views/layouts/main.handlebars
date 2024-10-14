@@ -13,9 +13,51 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">  
       <link rel="stylesheet" href="/css/nav-bar-2.css">  
+      <script src="js/modal.js" defer></script>
     </head>
 
     <body>
+      {{!-- * Modal (covers entire screen, disappears after first use.) --}}
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <div class="sub-section buonos-font">
+            <br>
+            <h1>Welcome to Buonos Pizza</h1>
+            <h3>Please choose your favorite location!</h3>
+            <br>
+          </div>
+          {{!--^ Change hyperlinks to buonos websites (https) --}}
+          <img src="/images/photos/header.webp" alt="">
+          <br>
+          <center>
+            <a href="https://www.buonosgilbert.com/?mredirect=true">
+              <h1 style="border: 1px solid black">1464 E Williams Field Rd, Gilbert, AZ 85295</h1>
+            </a>
+          </center>
+
+          <center>
+            <a href="https://www.google.com/maps/dir//1464+E+Williams+Field+Rd,+Gilbert,+AZ+85295/@33.3074096,-111.8409328,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x872bac74ffc357e1:0xed805996e92f4bc4!2m2!1d-111.7584842!2d33.3074568?entry=ttu&g_ep=EgoyMDI0MTAwOC4wIKXMDSoASAFQAw%3D%3D">
+              <h3>View map</h3>
+            </a>
+          </center>
+          <br>
+          <img src="/images/photos/header-higley.jpg" alt="">
+          <br>
+          <center>
+            <a href="https://www.buonoshigley.com/?mredirect=true">
+              <h1 style="border: 1px solid black">1652 N Higley Rd, Gilbert, AZ 85234</h1>
+            </a>
+          </center>
+          <center>
+            <a href="https://www.google.com/maps/place/1652+N+Higley+Rd+%23103,+Gilbert,+AZ+85234/@33.3821112,-111.7294222,15z/data=!4m6!3m5!1s0x872baefd5fe6e3dd:0x345013c2282d9d4c!8m2!3d33.3803097!4d-111.724233tyle=">
+              <h3>View map</h3>
+            </a>
+          </center>
+
+          <br><br><br><br><br><br><br><br><br>
+        </div>
+      </div>
+
       <nav id="navbar">
         <input type="checkbox" id="sidebar-active">
         <a class="home-link-1" href="/"><img src="/images/buonos-logo-5.jpg" alt=""></a>
@@ -37,7 +79,11 @@
           <a href="/hours">Hours</a>
           <a href="/contact-us">Contact</a>
           <a href="/about">About</a>
+
+          <a href="/specials-2">Specials</a>
+
           <a href="/trivia-home-page">Trivia</a>
+
           <a class="login-link" href="/employee/login">Login</a>
         </div>   
       </nav>

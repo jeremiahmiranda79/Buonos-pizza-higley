@@ -1,5 +1,6 @@
 <head>
-  <link rel="stylesheet" href="/css/contact.css">
+  {{!-- <link rel="stylesheet" href="/css/contact.css"> --}}
+  <link rel="stylesheet" href="/css/contact-2.css">
   <link rel="stylesheet" href="/css/style-page.css">
   <link rel="stylesheet" href="/css/social.css">
 </head>
@@ -9,10 +10,16 @@
   <div class="heading buonos-font">
     <center>
       <h1>Contact Us</h1>
+
+      <h3 class="title">Let's get in touch</h3>
+
+        <p class="text">
+          Message response times may vary. Please allow up to 48 hours. For immediate inquiries please call directly during our normal business hours. Or, if you are in the neighborhood feel free to visit us in person. See our contact information below. Thank you for your support. We look forward to hearing from you!   
+        </p>
     </center>
   </div>
 
-  <div class="container">
+  {{!-- <div class="container">
     <span class="big-circle"></span>
     <div class="form">
       <div class="contact-info">
@@ -87,10 +94,37 @@
         </form>
       </div>
     </div>
-  </div>
-</div>
+  </div> --}}
 
-<script></script>
+   <div class="container">
+    <form action="">
+
+      <label for="name">Name <b style="color:#FF0000";>*required</b></label>
+      <input type="text" id="name_id" name="name" placeholder="Your name.." required>
+
+      <label for="email">Email <b style="color:#FF0000";>*required</b></label>
+      <input type="email" id="email_id" name="email" placeholder="Your email.." required>
+
+      <label for="phone">Phone <b style="color:#FF0000";>*required</b></label>
+      <input type="tel" id="phone_id" name="phone" placeholder="Your phone number.." required>
+
+      {{!-- <label for="phone">Phone</label>
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select> --}}
+
+      <label for="message">Message <b style="color:#FF0000";>*required</b></label>
+      <textarea id="message_id" name="message" placeholder="My message.." style="height:200px" required></textarea>
+
+      {{!-- <input type="submit" value="Submit"> --}}
+      <input type="button" value="Send" class="btn-2" onclick="sendEmail()">
+
+    </form>
+  </div>
+
+</div>
 
 <script src="/js/contact.js"></script>
 
