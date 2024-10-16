@@ -93,64 +93,6 @@
           {{{ body }}}
         </main>
       </div>
-      
-      <footer>
-        <div class="social-footer">
-          {{#each information as |i|}}
-            <h5>{{i.description}}</h5>
-          {{/each}}
-
-          {{#each information as |i|}}
-            <h4>{{i.company}}</h4>
-          {{/each}}
-
-          {{#each information as |i|}}
-            <a href={{i.map}}>
-              <h4 style="text-decoration:none; color:black;">{{i.address}}</h4>
-            </a>
-          {{/each}}
-
-          {{#each information as |i|}}
-            <a href={{i.telNumber}}>
-              <h4 style="text-decoration:none; color:black;">{{i.phoneNumber}}</h4>
-            </a>
-          {{/each}}
-    
-          {{#each information as |i|}}
-            <a href="mailto: buonoshigley@gmail.com">
-              <h4 style="text-decoration:none; color:black;">{{i.email}}</h4> 
-            </a>
-          {{/each}}
-
-          <div class="row">
-            <div class="column">
-              <a href="https://www.facebook.com/profile.php?id=61563441787315" class="button-social">
-                <i class="fa-brands fa-square-facebook" style="text-decoration:none; color:black; font-size:30px;"></i>
-              </a>
-            </div>
-
-            <div class="column">
-              <a href="https://www.instagram.com/buonospizzahigley/?hl=en"  class="button-social">
-                <i class="fa-brands fa-instagram" style="text-decoration:none; color:black; font-size:30px;"></i>
-              </a>
-            </div>
-
-            <div class="column">
-              {{#each information as |i|}}
-              <a href={{i.map}}>
-                <i class="fa-brands fa-google" style="text-decoration:none; color:black; font-size:30px;"></i>
-              </a>
-            {{/each}}
-            </div>
-          </div>
-
-          <p>
-            COPYRIGHT &copy; 2024 BUONO'S HIGLEY - ALL RIGHTS RESERVED. SORRY NO CHECKS. GROUPS OF 8 OR MORE 15% GRATUITY Will BE INCLUDED. ALL PRICES SUBJECT TO CHANGE WITHOUT NOTICE.
-          </p> 
-
-          <h5>🤓Powered by: SmileyFaceStudios()🤓</h5>
-        </div>
-      </footer>
 
       <script src="/js/logout.js"></script>
       <script src="/js/login.js"></script>
