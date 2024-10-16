@@ -220,3 +220,25 @@ li {
 a {
   text-decoration: none;
 }
+
+/* Modal */
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: var(--background-1);
+  height: 100vh;
+}
+
+.modal .modal-content {
+  margin: auto;
+  padding: 30px;
+  background-color: var(--background-1);
+  height: 100vh;
+}
+
+@media (max-width: 786px) {
+
+}
