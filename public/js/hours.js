@@ -229,7 +229,7 @@ var checkOpenStatus = function () {
     switch (currentDate) {
       case NewYearsDay: 
         document.getElementById('open-close').src=newYearsSign;
-        document.getElementById('operation-status-text').textContent = closedHoliday;
+        document.getElementById('operation-status-text').textContent = openHoliday;
         break;
 
       case FourthOfJuly: 
